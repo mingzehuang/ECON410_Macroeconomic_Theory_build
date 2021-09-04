@@ -1,0 +1,77 @@
+---
+title: "Lecture 3: Introduction (continued)"
+author: "Mingze Huang"
+date: "`r Sys.Date()`"
+output: slidy_presentation
+---
+
+## Chain rule in CPI (Not Chained CPI)
+
+
+```{r, echo = FALSE, results = 'asis'}
+table1 = data.frame(matrix(c(2019, 2020, 2021, 0.02, 0.035, 0.013, 25, 20, 30, 0.25, 0.2, 0.2, 2, 1.5, 3), 3, 5)); colnames(table1) = c("Year", "Weight (Cars)", "Price (cars)", "Weight (Gas)", "Price (Gas)")
+knitr::kable(table1, caption = "Illustrate CPI calculation")
+``` 
+Take 2020 as base year, assume a representative (average) consumer spend 70% of money on cars, 30% of money on gasoline on 2020. By construction we have Cost of (base year) market basket for 2019~2021 is:
+
+$$
+C_{2019}=P_{2019}^{C}W_{2020}^{C}+P_{2019}^{G}W_{2020}^{G}=25\times0.035+2\times0.2=1.275\\
+C_{2020}=P_{2020}^{C}W_{2020}^{C}+P_{2020}^{G}W_{2020}^{G}=20\times0.035+1.5\times0.2=1\\
+C_{2021}=P_{2021}^{C}W_{2020}^{C}+P_{2021}^{G}W_{2020}^{G}=30\times0.035+3\times0.2=1.65
+$$
+
+
+## Chain rule in CPI
+
+By definition, CPI for 2019~2021 is: 
+$$
+CPI_{2019}=\frac{C_{2019}}{C_{2020}}\times100=127.5\\
+CPI_{2020}=\frac{C_{2020}}{C_{2020}}\times100=100\\
+CPI_{2021}=\frac{C_{2021}}{C_{2020}}\times100=165
+$$
+$\$1650$'s purchase power in 2021, probably equivalent to $\$1650\times\frac{127.5}{165}=\$1270$ in 2019!
+
+CPI inflation for 2020~2021 is:
+
+$$
+\pi_{2020}=\frac{CPI_{2020}-CPI_{2019}}{CPI_{2019}}\times100\%=\frac{100-127.5}{127.5}\times100\%=-21.57\%\\
+\pi_{2021}=\frac{CPI_{2021}-CPI_{2020}}{CPI_{2020}}\times100\%=65\%
+$$
+
+## Chain rule in CPI
+
+[In practice, BLS use market basket 24 months ago to calculate CPI.](https://www.bls.gov/cpi/additional-resources/chained-cpi-questions-and-answers.htm)
+
+```{r, echo = FALSE, results = 'asis'}
+table1 = data.frame(matrix(c(2019, 2020, 2021, 0.02, 0.035, 0.013, 25, 20, 30, 0.25, 0.2, 0.2, 2, 1.5, 3), 3, 5)); colnames(table1) = c("Year", "Weight (Cars)", "Price (cars)", "Weight (Gas)", "Price (Gas)")
+knitr::kable(table1, caption = "Illustrate CPI calculation")
+``` 
+Alternatively take 2019 as base year. Note that we assume a representative consumer spend half of money on cars and half on gasoline on 2019. By construction we have Cost of (base year) market basket for 2019~2021 is:
+$$
+C_{2019}=P_{2019}^{C}W_{2019}^{C}+P_{2019}^{G}W_{2019}^{G}=25\times0.02+2\times0.25=1\\
+C_{2020}=P_{2020}^{C}W_{2019}^{C}+P_{2020}^{G}W_{2019}^{G}=20\times0.02+1.5\times0.25=0.775\\
+C_{2021}=P_{2021}^{C}W_{2019}^{C}+P_{2021}^{G}W_{2019}^{G}=30\times0.02+3\times0.25=1.35
+$$
+
+## Chain rule in CPI
+
+CPI for 2019~2021 is:
+$$
+CPI_{2019}=\frac{C_{2019}}{C_{2019}}\times100=100\\
+CPI_{2020}=\frac{C_{2020}}{C_{2019}}\times100=77.5\\
+CPI_{2021}=\frac{C_{2021}}{C_{2020}}\times100=135
+$$
+
+
+$\$1650$'s purchase power in 2021, probably equivalent to $\$1650\times\frac{100}{135}=\$1222.22$ in 2019!
+
+Base year matters because your market basket changes!
+
+CPI inflation for 2020~2021 is:
+
+$$
+\pi_{2020}=\frac{CPI_{2020}-CPI_{2019}}{CPI_{2019}}\times100\%=\frac{77.5-100}{100}=-22.5\%\\
+\pi_{2021}=\frac{CPI_{2021}-CPI_{2020}}{CPI_{2020}}\times100\%=\frac{135-77.5}{77.5}=74.19\%
+$$
+
+[CPI vs. Chained CPI](https://www.bls.gov/cpi/additional-resources/chained-cpi-questions-and-answers.htm)

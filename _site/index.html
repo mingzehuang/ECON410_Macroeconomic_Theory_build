@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Macroeconomic Theory (Summer 2021)</title>
+
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">ECON410: Macroeconomic Theory</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Syllabus</a>
+</li>
+<li>
+  <a href="notes.html">Lecture Notes</a>
+</li>
+<li>
+  <a href="homework.html">Homework</a>
+</li>
+<li>
+  <a href="projects.html">Projects</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Macroeconomic Theory (Summer 2021)</h1>
+
+</div>
+
+
+<div id="session-econ410-200" class="section level3">
+<h3>Session: ECON410-200</h3>
+</div>
+<div id="affiliation-texas-am-university-college-station" class="section level3">
+<h3>Affiliation: Texas A&amp;M University (College Station)</h3>
+</div>
+<div id="instructor-mingze-rico-huang" class="section level3">
+<h3>Instructor: Mingze (Rico) Huang</h3>
+</div>
+<div id="time-1000am-1135am-mtwrf" class="section level3">
+<h3>Time: 10:00am ~ 11:35am (MTWRF)</h3>
+</div>
+<div id="location-online-only" class="section level3">
+<h3>Location: Online Only</h3>
+<p><strong>Email</strong>: <a href="mailto:sharkmanhmz@tamu.edu" class="email">sharkmanhmz@tamu.edu</a></p>
+<p><strong>Instructor’s Website</strong>: <a href="https://mingzehuang.github.io" class="uri">https://mingzehuang.github.io</a></p>
+<p><strong>Course Page</strong>: <a href="https://mingzehuang.github.io/ECON410_Macroeconomic_Theory/" class="uri">https://mingzehuang.github.io/ECON410_Macroeconomic_Theory/</a></p>
+<p><strong>GitHub Repository</strong>: <a href="https://github.com/mingzehuang/ECON410_Macroeconomic_Theory" class="uri">https://github.com/mingzehuang/ECON410_Macroeconomic_Theory</a></p>
+<p><strong>Lecture Meeting Link</strong> <a href="https://tamu.zoom.us/j/97062446981" class="uri">https://tamu.zoom.us/j/97062446981</a></p>
+<p><strong>Instructor’s Personal Meeting Link</strong>: <a href="https://tamu.zoom.us/my/mingzehuang" class="uri">https://tamu.zoom.us/my/mingzehuang</a></p>
+<p><strong>Office Hour Appointment Link</strong>: <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UU9PeGdIZS1pTUFhfGRlZmF1bHR8YTgyYTIzNTQ5OTRiYzJlYzY2M2U3NGIyY2VkNmQyNjA">Google Calendar Link to Schedule an Appointment</a></p>
+<p><strong>Reference Text Book</strong>: Olivier Blanchard, et.al. Macroeconomics: <em>An European Perspective</em> (As a reference, <strong>Not Required</strong>)</p>
+<p><strong>All required contents will be provided through lecture notes absolutely free</strong>.</p>
+<p><strong>Description</strong>: This course is considered to be intermediate level macroeconomic course for undergraduate students. The fundamental models and ideas in modern macroeconomic theory will be introduced. Some basic tools to collect and analyze macroeconomic data will be introduced to catch up with the job market demand in big data era.</p>
+<p><strong>Objectives</strong>: At the end of this course, students are expected be able to use basic macroeconomic ideas and data analysis tools to provide solid economic analysis for contemporary economic issues.</p>
+<p><strong>Prerequisites</strong>: Econ 203: Principle of Economics (Macro) with minimum grade of C. No previous GitHub, R or Python experience required, I’ll give you step-by-step tutoring if we use some of them in sometime.</p>
+</div>
+<div id="tentative-course-outline" class="section level2">
+<h2>Tentative Course Outline</h2>
+<ul>
+<li><p>Introduction</p>
+<ul>
+<li>Pandemic Lockdown, Government Relief Package, Gig Workers and Non-Economic Forces</li>
+</ul></li>
+<li><p>The Short Run</p>
+<ul>
+<li><p>The Goods Market</p></li>
+<li><p>Financial Markets</p></li>
+<li><p>Goods and Financial Markets: The IS-LM Model</p></li>
+<li><p>The IS-LM Model in an Open Economy</p></li>
+</ul></li>
+<li><p>The Medium Run</p>
+<ul>
+<li><p>The Labor Market</p></li>
+<li><p>Putting All Markets Together: The AS-AD Model</p></li>
+<li><p>The Natural Rate of Unemployment and the Philips Curve</p></li>
+<li><p>Inflation, Activity and Nominal Money Growth</p></li>
+</ul></li>
+<li><p>The Long Run</p>
+<ul>
+<li><p>The Facts of Growth</p></li>
+<li><p>Saving, Capital Accumulation and Output</p></li>
+<li><p>Technological Progress and Growth</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="grading-policy" class="section level2">
+<h2>Grading Policy</h2>
+<ul>
+<li><p>Homework 25%</p></li>
+<li><p>In-class Quiz 25%</p></li>
+<li><p>Midterm Project or Presentation 25%</p></li>
+<li><p>Final Project or Presentation 25%</p></li>
+</ul>
+</div>
+<div id="course-policy" class="section level2">
+<h2>Course Policy</h2>
+<ul>
+<li><p>We have weekly homework, late submission is not acceptable.The late work policy should define what constitutes late work (e.g., submitting a deliverable after the established deadline). Work submitted by a student as makeup work for an excused absence is not considered late work and is exempted from the late work policy. (See <a href="https://student-rules.tamu.edu/rule07/">Student Rule 7</a>).</p></li>
+<li><p>synchronously attendance is not required if time conflicts happen. All lectures will be recorded automatically in the cloud of zoom. In-class quizzes can make up with completely different problem set if needed. However, you are responsible to your learning outcome if you choose to watch class video instead of attending class on time.</p></li>
+<li><p>You are encouraged to discuss with your classmates via <a href="https://canvas.tamu.edu/courses/72016/discussion_topics">discussion board</a>, but you must write up your homework independently.</p></li>
+<li><p>Missing one class could easily lead to a disastrous domino effect. Please check our <a href="https://mingzehuang.github.io/macroeconomics.html">course page</a> and your <a href="https://canvas.tamu.edu/courses/72016">Canvas</a> for the lecture notes, homework, quizzes and video regularly.</p></li>
+</ul>
+</div>
+<div id="university-policies" class="section level1">
+<h1>University Policies</h1>
+<p>This section outlines the university level policies. The TAMU Faculty Senate established the wording of these policies.</p>
+<p>[NOTE: Faculty members should not change the written statements. A faculty member may add separate paragraphs if additional information is needed.]</p>
+<div id="attendance-policy" class="section level2">
+<h2>Attendance Policy</h2>
+<p>The university views class attendance and participation as an individual student responsibility. Students are expected to attend class and to complete all assignments.</p>
+<p>Please refer to <a href="https://student-rules.tamu.edu/rule07/">Student Rule 7</a> in its entirety for information about excused absences, including definitions, and related documentation and timelines.</p>
+</div>
+<div id="makeup-work-policy" class="section level2">
+<h2>Makeup Work Policy</h2>
+<p>Students will be excused from attending class on the day of a graded activity or when attendance contributes to a student’s grade, for the reasons stated in Student Rule 7, or other reason deemed appropriate by the instructor.</p>
+<p>Please refer to <a href="https://student-rules.tamu.edu/rule07/">Student Rule 7</a> in its entirety for information about makeup work, including definitions, and related documentation and timelines.</p>
+<p>Absences related to Title IX of the Education Amendments of 1972 may necessitate a period of more than 30 days for make-up work, and the timeframe for make-up work should be agreed upon by the student and instructor” <a href="https://student-rules.tamu.edu/rule07/">(Student Rule 7, Section 7.4.1)</a>.</p>
+<p>“The instructor is under no obligation to provide an opportunity for the student to make up work missed because of an unexcused absence” <a href="https://student-rules.tamu.edu/rule07/">(Student Rule 7, Section 7.4.2)</a>.</p>
+<p>Students who request an excused absence are expected to uphold the Aggie Honor Code and Student Conduct Code. <a href="https://student-rules.tamu.edu/rule24/">(See Student Rule 24)</a>.</p>
+</div>
+<div id="academic-integrity-statement-and-policy" class="section level2">
+<h2>Academic Integrity Statement and Policy</h2>
+<p>“An Aggie does not lie, cheat or steal, or tolerate those who do.”</p>
+<p>“Texas A&amp;M University students are responsible for authenticating all work submitted to an instructor. If asked, students must be able to produce proof that the item submitted is indeed the work of that student. Students must keep appropriate records at all times. The inability to authenticate one’s work, should the instructor request it, may be sufficient grounds to initiate an academic misconduct case” <a href="https://aggiehonor.tamu.edu/Rules-and-Procedures/Rules/Honor-System-Rules">(Section 20.1.2.3, Student Rule 20)</a>.</p>
+<div id="texas-am-at-college-station" class="section level3">
+<h3>Texas A&amp;M at College Station</h3>
+<p>You can learn more about the Aggie Honor System Office Rules and Procedures, academic integrity, and your rights and responsibilities at <a href="https://aggiehonor.tamu.edu" class="uri">https://aggiehonor.tamu.edu</a>.</p>
+</div>
+</div>
+<div id="americans-with-disabilities-act-ada-policy" class="section level2">
+<h2>Americans with Disabilities Act (ADA) Policy</h2>
+<p>Texas A&amp;M University is committed to providing equitable access to learning opportunities for all students. If you experience barriers to your education due to a disability or think you may have a disability, please contact Disability Resources office on your campus (resources listed below). Disabilities may include, but are not limited to attentional, learning, mental health, sensory, physical, or chronic health conditions. All students are encouraged to discuss their disability related needs with Disability Resources and their instructors as soon as possible.</p>
+<div id="texas-am-at-college-station-1" class="section level3">
+<h3>Texas A&amp;M at College Station</h3>
+<p>Disability Resources is located in the Student Services Building or at (979) 845-1637 or visit <a href="https://disability.tamu.edu" class="uri">https://disability.tamu.edu</a>.</p>
+</div>
+</div>
+<div id="title-ix-and-statement-on-limits-to-confidentiality" class="section level2">
+<h2>Title IX and Statement on Limits to Confidentiality</h2>
+<p>Texas A&amp;M University is committed to fostering a learning environment that is safe and productive for all. University policies and federal and state laws prohibit gender-based discrimination and sexual harassment, including sexual assault, sexual exploitation, domestic violence, dating violence, and stalking.</p>
+<p>With the exception of some medical and mental health providers, all university employees (including full and part-time faculty, staff, paid graduate assistants, student workers, etc.) are Mandatory Reporters and must report to the Title IX Office if the employee experiences, observes, or becomes aware of an incident that meets the following conditions <a href="https://rules-saps.tamu.edu/PDFs/08.01.01.M1.pdf">(see University Rule 08.01.01.M1)</a>:</p>
+<ul>
+<li><p>The incident is reasonably believed to be discrimination or harassment.</p></li>
+<li><p>The incident is alleged to have been committed by or against a person who, at the time of the incident, was (1) a student enrolled at the University or (2) an employee of the University.</p></li>
+</ul>
+<p>Mandatory Reporters must file a report regardless of how the information comes to their attention – including but not limited to face-to-face conversations, a written class assignment or paper, class discussion, email, text, or social media post. Although Mandatory Reporters must file a report, in most instances, a person who is subjected to the alleged conduct will be able to control how the report is handled, including whether or not to pursue a formal investigation. The University’s goal is to make sure you are aware of the range of options available to you and to ensure access to the resources you need.</p>
+<div id="texas-am-at-college-station-2" class="section level3">
+<h3>Texas A&amp;M at College Station</h3>
+<p>Students wishing to discuss concerns in a confidential setting are encouraged to make an appointment with <a href="https://caps.tamu.edu/">Counseling and Psychological Services</a> (CAPS). Students can learn more about filing a report, accessing supportive resources, and navigating the Title IX investigation and resolution process on the University’s <a href="https://titleix.tamu.edu/">Title IX webpage</a>.</p>
+</div>
+</div>
+<div id="statement-on-mental-health-and-wellness" class="section level2">
+<h2>Statement on Mental Health and Wellness</h2>
+<p>Texas A&amp;M University recognizes that mental health and wellness are critical factors that influence a student’s academic success and overall wellbeing. Students are encouraged to engage in healthy self-care by utilizing available resources and services on your campus.</p>
+<div id="texas-am-college-station" class="section level3">
+<h3>Texas A&amp;M College Station</h3>
+<p>Students who need someone to talk to can contact <a href="https://caps.tamu.edu/">Counseling &amp; Psychological Services</a> (CAPS) or call the <a href="https://caps.tamu.edu/helpline/">TAMU Helpline</a> (979-845-2700) from 4:00 p.m. to 8:00 a.m. weekdays and 24 hours on weekends. 24-hour emergency help is also available through the National Suicide Prevention Hotline (800-273-8255) or at <a href="https://suicidepreventionlifeline.org/">suicidepreventionlifeline.org</a>.</p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

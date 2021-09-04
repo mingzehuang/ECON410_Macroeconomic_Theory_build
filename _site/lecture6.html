@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Mingze Huang" />
+  <meta name="date" content="2021-08-05" />
+  <title>Lecture 6: IS-LM Model</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="site_libs/slidy-2/scripts/slidy.js"></script>
+  <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Lecture 6: IS-LM Model</h1>
+  <p class="author">
+Mingze Huang
+  </p>
+  <p class="date">2021-08-05</p>
+</div>
+<div id="exogenous-and-endogenous-variables-in-is-lm-model" class="slide section level2">
+<h1>Exogenous and Endogenous variables in IS-LM Model</h1>
+<p>Recall the IS-LM Model:</p>
+<p><span class="math display">\[
+\begin{cases}
+Y^{r} = c_{0}+c_{1}(Y^{r}-T)+I(i)+G\\
+\frac{M}{P}=Y^{r}\cdot L(i)
+\end{cases}
+\]</span></p>
+<p>There are only two variables are endogenous (determined by the model itself): real GDP (<span class="math inline">\(Y^{r}\)</span>) and interest rate (<span class="math inline">\(i\)</span>)</p>
+<p>Other variables are given (exogenous, determined outside of the model):</p>
+<ul>
+<li><p>Autonomous consumption (<span class="math inline">\(c_{0}\)</span>) and marginal propensity to consume (<span class="math inline">\(c_{1}\)</span>) depend on consumer’s preference.</p></li>
+<li><p>Net taxes (<span class="math inline">\(T\)</span>) and government expenditure (<span class="math inline">\(G\)</span>) depend on government’s fiscal policy. <a href="https://www.usa.gov/budget">Budget of U.S. Government</a></p></li>
+<li><p>The detail structure of investment function (<span class="math inline">\(I(\cdot)\)</span>) depend on firm’s decision and productivity, although we know it should be a decreasing function of interest rate (<span class="math inline">\(i\)</span>).</p></li>
+<li><p>Money supply (<span class="math inline">\(M\)</span>) depends on government’s monetary policy <a href="https://www.federalreserve.gov/monetarypolicy/fomc.htm">FOMC</a></p></li>
+<li><p>This model assume aggregate price level (<span class="math inline">\(P\)</span>) is given and unchanged in the short run.</p></li>
+<li><p>The detail structure of <span class="math inline">\(L(\cdot)\)</span> depends on consumer’s liquidity preference, although we know it should be a decreasing function of interest rate (<span class="math inline">\(i\)</span>).</p></li>
+</ul>
+</div>
+<div id="relation-between-endogenous-variables-in-is-lm-model" class="slide section level2">
+<h1>Relation between Endogenous Variables in IS-LM Model</h1>
+<p>As we discussed before, IS-LM model is two equation, two unknown (endogenous variables) system.</p>
+<ul>
+<li><p>Take all exogenous variables (<span class="math inline">\(c_{0}\)</span>, <span class="math inline">\(c_{1}\)</span>, <span class="math inline">\(T\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(M\)</span>, <span class="math inline">\(P\)</span>), investment function (<span class="math inline">\(I(\cdot)\)</span>) and liquidity function (<span class="math inline">\(L(\cdot)\)</span>) as given.</p></li>
+<li><p>Two unknowns (endogenous variables) <span class="math inline">\(Y^{r}\)</span> and <span class="math inline">\(i\)</span> can be put on horizontal and vertical axis.</p></li>
+<li><p>Two functions can be drawn as two lines on the graph. The relation between two unknown endogenous variables (<span class="math inline">\(Y^{r}\)</span>, <span class="math inline">\(i\)</span>) can be represented by the points on those two lines.</p></li>
+<li><p>The cross point of two lines is just the solution of this equation system which meet the equilibrium condition for both equations (markets) simultaneously.</p></li>
+<li><p>If we are going to change the value of exogenous variables (<span class="math inline">\(c_{0}\)</span>, <span class="math inline">\(c_{1}\)</span>, <span class="math inline">\(T\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(M\)</span>, <span class="math inline">\(P\)</span>), then the corresponding line will shift to reflect new equilibrium on that market. New general equilibrium would be on the new cross point.</p></li>
+</ul>
+</div>
+<div id="fiscal-policy-on-is-curve" class="slide section level2">
+<h1>Fiscal Policy on IS Curve</h1>
+<p>Assume government increase net taxes <span class="math inline">\(T\)</span> (increase taxes or cut transfer payments), we see <span class="math inline">\(T\)</span> only appears on IS relation: <span class="math inline">\(Y^{r} = c_{0}+c_{1}(Y^{r}-T)+I(i)+G\)</span></p>
+<p>Rearrange it: <span class="math inline">\((1 - c_{1})Y^{r} = c_{0}-c_{1}T+I(i)+G\)</span></p>
+<p>Apparently, for any interest rate <span class="math inline">\(i\)</span>, increase in <span class="math inline">\(T\)</span> will decrease the right hand side of equation since <span class="math inline">\(c_{1}&gt;0\)</span>. To hold the equality, left hand side should go down. Since <span class="math inline">\(1 - c_{1} &gt; 0\)</span>, <span class="math inline">\(Y^{r}\)</span> will go down. So that IS curve will shift to the left.</p>
+<p><img src="tax.png" /></p>
+</div>
+<div id="fiscal-policy-on-is-lm-curve" class="slide section level2">
+<h1>Fiscal Policy on IS-LM Curve</h1>
+<p>Now put the LM curve on, we can see the new cross point as new general equilibrium. The new equilibrium has lower interest rate (<span class="math inline">\(i\)</span>) and lower output (<span class="math inline">\(Y^{r}\)</span>).</p>
+<p><img src="taxislm.png" /></p>
+<p>The intuition starts from goods market (IS relation):</p>
+<ul>
+<li><p>The increase of net taxes <span class="math inline">\(T\)</span> leads to the decrease of consumer’s disposable income <span class="math inline">\(Y_{D}^{r}=Y^{r} - T\)</span>.</p></li>
+<li><p>Lower disposable income <span class="math inline">\(Y_{D}^{r}=Y^{r} - T\)</span> reduces induced consumption <span class="math inline">\(c_{1}\cdot Y_{D}=c_{1}(Y^{r} - T)\)</span> and then consumption <span class="math inline">\(C\)</span>.</p></li>
+<li><p>Eventually production (real GDP <span class="math inline">\(Y^{r}\)</span>) decreases due to lack of consumption demand.</p></li>
+</ul>
+</div>
+<div id="fiscal-policy-on-is-lm-curve-1" class="slide section level2">
+<h1>Fiscal Policy on IS-LM Curve</h1>
+<p>Then goes to financial market (LM relation):</p>
+<ul>
+<li><p>Lower income (real GDP <span class="math inline">\(Y^{r}\)</span>) and lower consumption (<span class="math inline">\(C\)</span>) lead to lower transaction need.</p></li>
+<li><p>However, real money supply (<span class="math inline">\(\frac{M}{P}\)</span>) is given, consumers use extra money to buy more bonds to earn interest. Bond issuers can offer lower interest rate (<span class="math inline">\(i\)</span>) since buyers compete with each other.</p></li>
+</ul>
+<p>In summary, net taxes (<span class="math inline">\(T\)</span>) goes up, output (real GDP <span class="math inline">\(Y^{r}\)</span>) and interest rate (<span class="math inline">\(i\)</span>) goes down.</p>
+<p>Also, disposable income (<span class="math inline">\(Y_{D}^{r}\)</span>) and consumption (<span class="math inline">\(C\)</span>) go down.</p>
+<p>Question: government can choose government spending <span class="math inline">\(G\)</span> through budget legislation process. What do you think about the effect of <span class="math inline">\(G\)</span> on output (<span class="math inline">\(Y^{r}\)</span>), interest rate (<span class="math inline">\(i\)</span>), disposable income (<span class="math inline">\(Y_{D}^{r}\)</span>) and consumption (<span class="math inline">\(C\)</span>)? <a href="projects.html">Midterm Project</a></p>
+</div>
+<div id="monetary-policy-on-lm-curve" class="slide section level2">
+<h1>Monetary Policy on LM Curve</h1>
+<p>Assume federal reserve system increase money supply <span class="math inline">\(M\)</span>, we see <span class="math inline">\(M\)</span> only appears on LM relation: <span class="math inline">\(\frac{M}{P}=Y^{r}\cdot L(i)\)</span></p>
+<p>For any output <span class="math inline">\(Y^{r}\)</span>, increase in <span class="math inline">\(M\)</span> will increase the left hand side of equation since aggregate price level <span class="math inline">\(P\)</span> is assumed to be unchanged in short run. To hold the equality, left hand side should go up. Since <span class="math inline">\(L(\cdot)\)</span> is some decreasing function, <span class="math inline">\(i\)</span> should go down. So that LM curve will shift down.</p>
+<p><img src="monetary.png" /></p>
+</div>
+<div id="monetary-policy-on-is-lm-curve" class="slide section level2">
+<h1>Monetary Policy on IS-LM Curve</h1>
+<p>Now put the IS curve on, we can see the new cross point as new general equilibrium. The new equilibrium has lower interest rate (<span class="math inline">\(i\)</span>) and higher output (<span class="math inline">\(Y^{r}\)</span>).</p>
+<p><img src="monetaryislm.png" /></p>
+</div>
+<div id="monetary-policy-on-is-lm-curve-1" class="slide section level2">
+<h1>Monetary Policy on IS-LM Curve</h1>
+<p>The intuition starts from financial market (LM relation):</p>
+<ul>
+<li><p>The increase of money supply <span class="math inline">\(M\)</span> leads to the increase of real money supply <span class="math inline">\(\frac{M}{P}\)</span>.</p></li>
+<li><p>Higher real money supply (<span class="math inline">\(\frac{M}{P}\)</span>) means consumers have more extra money to buy more bonds to earn interest. Bond issuers can offer lower interest rate (<span class="math inline">\(i\)</span>) since buyers compete with each other.</p></li>
+</ul>
+<p>Then goes to goods market (IS relation):</p>
+<ul>
+<li><p>Lower interest rate (<span class="math inline">\(i\)</span>) leads to higher investment (<span class="math inline">\(I(i)\)</span>) since investment function is decreasing function.</p></li>
+<li><p>Higher investment (<span class="math inline">\(I(i)\)</span>) leads to more production (real GDP <span class="math inline">\(Y^{r}\)</span>) and more demand on capital goods.</p></li>
+<li><p>More production (real GDP <span class="math inline">\(Y^{r}\)</span>) leads to more income (e.g. wage, dividend), then higher disposable income <span class="math inline">\(Y_{D}^{r}=Y^{r} - T\)</span>.</p></li>
+<li><p>Higher disposable income <span class="math inline">\(Y_{D}^{r}=Y^{r} - T\)</span> increases induced consumption <span class="math inline">\(c_{1}\cdot Y_{D}=c_{1}(Y^{r} - T)\)</span> and then consumption demand <span class="math inline">\(C\)</span> as well.</p></li>
+</ul>
+<p>In summary, money supply (<span class="math inline">\(M\)</span>) goes up, interest rate (<span class="math inline">\(i\)</span>) goes down but output (real GDP <span class="math inline">\(Y^{r}\)</span>) goes up.</p>
+<p>Also, investment (<span class="math inline">\(I(i)\)</span>), disposable income (<span class="math inline">\(Y_{D}^{r}\)</span>) and consumption (<span class="math inline">\(C\)</span>) goes up.</p>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"frames":[{"func":"knitr::kable(table1, caption = \"Illustrate GDP definition 2\")","file":"","line_number":0,"end_line_number":0,"character_number":0,"end_character_number":0}],"message":"Error in knitr::kable(table1, caption = \"Illustrate GDP definition 2\") : \n  object 'table1' not found\n"}

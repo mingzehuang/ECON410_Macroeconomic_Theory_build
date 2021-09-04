@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Mingze Huang" />
+  <meta name="date" content="2021-08-05" />
+  <title>Lecture 14: AS-AD Model (continued)</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="site_libs/slidy-2/scripts/slidy.js"></script>
+  <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Lecture 14: AS-AD Model (continued)</h1>
+  <p class="author">
+Mingze Huang
+  </p>
+  <p class="date">2021-08-05</p>
+</div>
+<div id="as-ad-model-in-short-run" class="slide section level2">
+<h1>AS-AD Model in Short Run</h1>
+<p>Now let’s put Aggregate Supply (AS) curve and Aggregate Demand (AD) curve together: <span class="math display">\[
+\begin{cases}
+P= P^{e}(1+\mu)F(1-\frac{Y^{r}}{L},z) &amp; \text{AS curve}\\
+\frac{M}{P}=Y^{r}\cdot L(I^{-1}((1 - c_{1})Y^{r}+c_{1}T-c_{0}-G)) &amp; \text{AD curve}
+\end{cases}
+\]</span></p>
+<p><img src="ASAD.png" /></p>
+</div>
+<div id="as-ad-model-in-short-run-1" class="slide section level2">
+<h1>AS-AD Model in Short Run</h1>
+<p>Now we have a two-equation two-unknown (endogenous variable) system, which is called: <strong>AS-AD model</strong>.</p>
+<ul>
+<li><p>There are several exogenous variables (given outside the model):</p>
+<ul>
+<li><p>Expected price level (<span class="math inline">\(P^{e}\)</span>) given by workers’ expectation, mark-up <span class="math inline">\(\mu\)</span> given by goods market competition, labor force <span class="math inline">\(L\)</span> given by labor participants’ preference, labor market catchall variable <span class="math inline">\(z\)</span> is given, function <span class="math inline">\(F(\cdot)\)</span> is given as well.</p></li>
+<li><p>Nominal money supply (<span class="math inline">\(M\)</span>) given by central bank, autonomous consumption <span class="math inline">\(c_{0}\)</span> and marginal propensity to consume <span class="math inline">\(c_{1}\)</span> are given by consumers’ preference, net taxes (<span class="math inline">\(T\)</span>) and government spending (<span class="math inline">\(G\)</span>) are given by government, functions <span class="math inline">\(L(\cdot)\)</span> and <span class="math inline">\(I^{-1}(\cdot)\)</span> are given as well.</p></li>
+</ul></li>
+<li><p>Only two endogenous variables (determined inside the model): price level (<span class="math inline">\(P\)</span>) and output level (<span class="math inline">\(Y^{r}\)</span>).</p></li>
+</ul>
+<p>For Aggregate Supply (AS) curve, there is a special case - labor market equilibrium - where:</p>
+<ul>
+<li><p>where expected price (<span class="math inline">\(P^{e}\)</span>), current price (<span class="math inline">\(P\)</span>) and future price (<span class="math inline">\(P&#39;\)</span>) are equal to each other (e.g. <span class="math inline">\(P^{e}=P=P&#39;\)</span>). So no further adjustment on price level, price level keep stable (unchanged).</p></li>
+<li><p>the labor market equilibrium unemployment rate is natural rate of unemployment (<span class="math inline">\(u_{n}\)</span>), the corresponding output level is natural output <span class="math inline">\(Y_{n}^{r}\)</span>.</p></li>
+</ul>
+</div>
+<div id="as-ad-model-in-short-run-2" class="slide section level2">
+<h1>AS-AD Model in Short Run</h1>
+<p>Thus, Aggregate Supply (AS) curve always passes through the labor market equilibrium point. However, labor market equilibrium may not hold in short run:</p>
+<ul>
+<li><p>When output (<span class="math inline">\(Y&#39;^{r}\)</span>) goes above the natural output level (<span class="math inline">\(Y_{n}^{r}\)</span>), the price level (<span class="math inline">\(P&#39;\)</span>) would be higher than expected price level (<span class="math inline">\(P^{e}\)</span>).</p></li>
+<li><p>When output (<span class="math inline">\(Y&#39;^{r}\)</span>) goes below the natural output level (<span class="math inline">\(Y_{n}^{r}\)</span>), the price level (<span class="math inline">\(P&#39;\)</span>) would be lower than expected price level (<span class="math inline">\(P^{e}\)</span>).</p></li>
+</ul>
+<p>The solution of AS-AD model is the goods market and financial market equilibrium:</p>
+<ul>
+<li><p>Goods market equilibrium always satisfies aggregate supply equals to aggregate demand. That means goods market equilibrium is on the intersection point of AS curve and AD curve.</p></li>
+<li><p>Since AD curve is derived from IS-LM model, every point on AD curve satisfies financial market equilibrium along with goods market equilibrium.</p></li>
+</ul>
+<p>Thus, The intersection point of AS curve and AD curve satisfies both goods market equilibrium and financial market equilibrium simultaneously.</p>
+</div>
+<div id="as-ad-model-in-medium-run" class="slide section level2">
+<h1>AS-AD Model in Medium Run</h1>
+<p>However, it doesn’t necessarily satisfy labor market equilibrium, since expected price level (<span class="math inline">\(P^{e}\)</span>) can be different from current price level (<span class="math inline">\(P\)</span>) and future price level (<span class="math inline">\(P&#39;\)</span>) in short run.</p>
+<ul>
+<li>It takes some time for workers to update their expected price level (<span class="math inline">\(P^{e}\)</span>), renew labor contract (adjust nominal wages <span class="math inline">\(W\)</span>).</li>
+</ul>
+<p>Workers will keep adjusting their expected price level (<span class="math inline">\(P^{e}\)</span>) until it reaches labor market equilibrium where expected price level equal to current price level and future price level (e.g. no more change on price) and unemployment rate on natural rate of unemployment (<span class="math inline">\(u_{n}\)</span>), output on natural output (<span class="math inline">\(Y_{n}^{r}\)</span>).</p>
+<ul>
+<li>Eventually, the economy will reach labor market equilibrium along with goods market and financial market equilibrium in medium run. So that in medium run, equilibrium output level is always natural output level <span class="math inline">\(Y_{n}^{r}\)</span>, equilibrium price level <span class="math inline">\(P^*\)</span> equals to expected price level (<span class="math inline">\(P^{e*}\)</span>) and no more change on price level (future price level keeps on equilibrium price level).</li>
+</ul>
+<p>Mathematically, it’s easy to show that the natural output <span class="math inline">\(Y_{n}^{r}\)</span> is the same level as long as expected price level equals price level (<span class="math inline">\(P^{e}=P\)</span>), no matter which price level it is at.</p>
+<p>Recall Aggregate Supply curve: <span class="math inline">\(P= P^{e}(1+\mu)F(1-\frac{Y^{r}}{L},z)\)</span></p>
+<p>When <span class="math inline">\(P^{e}=P\)</span>, then <span class="math inline">\(P^{e}\)</span> and <span class="math inline">\(P\)</span> cancel out: <span class="math inline">\(1= 1(1+\mu)F(1-\frac{Y_{n}^{r}}{L},z)\)</span>.</p>
+<p>No matter what the number of <span class="math inline">\(P^{e}\)</span> and <span class="math inline">\(P\)</span> is, the natural output <span class="math inline">\(Y_{n}^{r}\)</span> is the same as long as <span class="math inline">\(P^{e}=P\)</span>.</p>
+</div>
+<div id="as-ad-model-from-short-run-to-medium-run" class="slide section level2">
+<h1>AS-AD Model from Short Run to Medium Run</h1>
+<p><img src="ASADmid.png" /></p>
+<ul>
+<li>In short run, Aggregate Supply curve passes through labor market equilibrium point <span class="math inline">\(B\)</span>, where expected price level is <span class="math inline">\(P^{e}\)</span> and natural output level is <span class="math inline">\(Y_{n}^{r}\)</span>.</li>
+</ul>
+</div>
+<div id="as-ad-model-from-short-run-to-medium-run-1" class="slide section level2">
+<h1>AS-AD Model from Short Run to Medium Run</h1>
+<ul>
+<li><p>However, the intersection point of AS curve and AD curve is <span class="math inline">\(A\)</span>, which means equilibrium output level is <span class="math inline">\(Y^{r}\)</span> and equilibrium price level is <span class="math inline">\(P\)</span> on goods market equilibrium (as well as financial market equilibrium by AD curve).</p></li>
+<li><p>Workers see the realized price level <span class="math inline">\(P\)</span> is higher than their expectation <span class="math inline">\(P^{e}\)</span>. To cover the increasing living cost, they update their expected price level to <span class="math inline">\(P^{e&#39;}=P\)</span> and renegotiate labor contract (require higher wage). Since expected price level is exogenous variable given by workers’ expectation, the increase of expected price level (from <span class="math inline">\(P^{e}\)</span> to <span class="math inline">\(P^{e&#39;}\)</span>) will shift Aggregate Supply curve up to AS’.</p></li>
+<li><p>Now new Aggregate Supply curve (AS’) passes through new labor market equilibrium point (expected price level <span class="math inline">\(P^{e&#39;}=P\)</span> and natural output level <span class="math inline">\(Y_{n}^{r}\)</span>). However, the new goods market equilibrium <span class="math inline">\(A&#39;\)</span> has new equilibrium output level <span class="math inline">\(Y&#39;^{r}\)</span> and new realized equilibrium price <span class="math inline">\(P&#39;\)</span>. The realized price <span class="math inline">\(P&#39;\)</span> is still higher than expected price level <span class="math inline">\(P^{e&#39;}=P\)</span>.</p></li>
+<li><p>Workers see higher realized price level <span class="math inline">\(P&#39;\)</span> and keep adjusting their expected price level, so Aggregate Supply curve keeps shifting up.</p></li>
+<li><p>Until Aggregate Supply curve reaches some AS’’, where the goods market and financial market equilibrium reach natural output level <span class="math inline">\(Y_{n}^{r}\)</span>. So that by labor market condition (See AS equation), expected price level equals current price level (<span class="math inline">\(P^{e*}=P^{*}\)</span>) and no more change on price level (future price level keeps on <span class="math inline">\(P^*\)</span>).</p></li>
+</ul>
+<p><strong>In short run, manipulate demand side may boost output (real GDP) level for a while. However, price and wage adjustment will push output level back to natural output level, with a higher price tag!</strong> <a href="https://kansaspublicradio.org/npr-news/think-inflation-bad-now-lets-take-step-back-1970s">See Stagflation (Wage-Price Spiral) in 1970s</a></p>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

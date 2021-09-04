@@ -1,0 +1,12 @@
+name: "ECON410: Macroeconomic Theory"
+navbar:
+  title: "ECON410: Macroeconomic Theory"
+  left:
+    - text: "Syllabus"
+      href: index.html
+    - text: "Lecture Notes"
+      href: notes.html
+    - text: "Homework"
+      href: homework.html
+    - text: "Projects"
+      href: projects.html

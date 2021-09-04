@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Mingze Huang" />
+  <meta name="date" content="2021-08-05" />
+  <title>Lecture 2: Introduction (continued)</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="site_libs/slidy-2/scripts/slidy.js"></script>
+  <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Lecture 2: Introduction (continued)</h1>
+  <p class="author">
+Mingze Huang
+  </p>
+  <p class="date">2021-08-05</p>
+</div>
+<div id="inflation-measured-by-inflation-rate" class="slide section level2">
+<h1>Inflation (Measured by Inflation Rate)</h1>
+<p>Inflation is a sustained rise in the general level of prices-the price level. The inflation rate is the rate at which the price level increases. Symmetrically, deflation is a sustained decline in the price level. It corresponds to a negative inflation rate.</p>
+<p>The GDP deflator gives the average price of output-the final goods produced in the economy-but consumers care about the average price of consumption-the goods they consume.</p>
+<ul>
+<li><p>Some of the goods in GDP are sold not to consumers but to firms (<a href="https://www.thebalance.com/how-does-real-estate-affect-the-u-s-economy-3306018">factory buildings</a>, machine tools, et.al), to government or to foreigners.</p></li>
+<li><p>Some of the goods bought by consumers are not produced domestically but are imported from abroad.</p></li>
+</ul>
+<p>To measure the average price of consumption or the cost of living, we use Consumer Price Index (CPI) or Personal consumption expenditure (PCE) price index. <a href="https://www.bls.gov/opub/mlr/2016/article/comparing-the-cpi-with-the-gdp-price-index-and-gdp-implicit-price-deflator.htm#_edn12">Definition by Bureau of Labor Statistics and Bureau of Economic Analysis</a></p>
+</div>
+<div id="inflation-measured-by-inflation-rate-1" class="slide section level2">
+<h1>Inflation (Measured by Inflation Rate)</h1>
+<ul>
+<li><p>CPI measures price changes in goods and services purchased out of pocket by urban consumers.</p></li>
+<li><p>CPI has 2 primary inputs: prices and expenditure weights (market basket).</p></li>
+<li><p>BLS Commodities and Services (C&amp;S) survey collects price data on approximately 80000 goods and services per month in roughly 23000 retail establishments in 87 urban areas around U.S.. The Housing Survey collects approximately 6000 rent quotes per month in the same areas.</p></li>
+<li><p>The Consumer Expenditure (CE) survey data collected by U.S. Census of Bureau for BLS. CE survey identifies the dollar amount households spend on a broad range of goods and services. Then it’s easy to derive the weight for each category by dollar amount and price.</p></li>
+<li><p>Take market basket in base year as benchmark (constant).</p></li>
+<li><p>The CPI for a given year, <span class="math inline">\(CPI_{t}\)</span>, is the ratio of cost of (base year) market basket in given year to cost of (base year) market basket in base year.</p></li>
+</ul>
+<p>Note that to capture real GDP due to production, we use constant price as weights to eliminate the change in price. Now to capture the price level, we use constant expenditure weights (market basket) to eliminate the change in quantity.</p>
+<p>Recall that we have GDP deflator in base year is <span class="math inline">\(1\)</span> or <span class="math inline">\(100\%\)</span> by construction. Similarly, we would like to make CPI as <span class="math inline">\(100\)</span> in base year for convenience (traditionally for index we denote <span class="math inline">\(100\)</span> instead of <span class="math inline">\(1\)</span>).</p>
+</div>
+<div id="inflation-measured-by-inflation-rate-2" class="slide section level2">
+<h1>Inflation (Measured by Inflation Rate)</h1>
+<p>Example:</p>
+<table>
+<caption>Illustrate CPI calculation</caption>
+<thead>
+<tr class="header">
+<th align="right">Year</th>
+<th align="right">Weight (Cars)</th>
+<th align="right">Price (cars)</th>
+<th align="right">Weight (Gas)</th>
+<th align="right">Price (Gas)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">2020</td>
+<td align="right">0.035</td>
+<td align="right">20</td>
+<td align="right">0.2</td>
+<td align="right">1.5</td>
+</tr>
+<tr class="even">
+<td align="right">2021</td>
+<td align="right">0.013</td>
+<td align="right">30</td>
+<td align="right">0.2</td>
+<td align="right">3.0</td>
+</tr>
+</tbody>
+</table>
+<p>Take 2020 as base year, assume a representative (average) consumer spend 70% of money on cars, 30% of money on gasoline. By construction we have Cost of (base year) market basket for base year is:</p>
+<p><span class="math display">\[
+C_{2020}=P_{2020}^{C}W_{2020}^{C}+P_{2020}^{G}W_{2020}^{G}=20\times0.035+1.5\times0.2=1
+\]</span></p>
+<p>Hold market basket unchanged, the cost of (base year) market basket for given year 2021 is:</p>
+<p><span class="math display">\[
+C_{2021}=P_{2021}^{C}W_{2020}^{C}+P_{2021}^{G}W_{2020}^{G}=30\times0.035+3\times0.2=1.65
+\]</span></p>
+<p>By definition, CPI in 2020 (base year) is: <span class="math inline">\(CPI_{2020}=\frac{C_{2020}}{C_{2020}}\times100=100\)</span></p>
+<p>CPI for 2021 (given year) is: <span class="math inline">\(CPI_{2021}=\frac{C_{2021}}{C_{2020}}\times100=\frac{1.65}{1}\times100=165\)</span></p>
+<p>If you spend <span class="math inline">\(\$1000\)</span> per month in 2020, you probably have to spend <span class="math inline">\(\$1000\times\frac{165}{100}=\$1650\)</span> in 2021 to maintain your living standard!</p>
+</div>
+<div id="inflation-measured-by-inflation-rate-3" class="slide section level2">
+<h1>Inflation (Measured by Inflation Rate)</h1>
+<p>CPI inflation is the growth rate of CPI:</p>
+<p><span class="math display">\[
+\pi_{2021}=\frac{CPI_{2021}-CPI_{2020}}{CPI_{2020}}\times100\%=65\%
+\]</span> Note that: <strong>CPI inflation is the growth rate of CPI, but GDP deflator inflation is NOT the growth rate of GDP deflator!</strong></p>
+<ul>
+<li><p>In U.S. Bureau of Labor Statistics, GDP deflator is formally named as <strong>GDP implicit price deflator</strong>.</p></li>
+<li><p>U.S. Bureau of Labor Statistics has another index called <strong>GDP price index</strong>, which has similar structure as <strong>CPI</strong>, but covers all goods and services covered by GDP.</p></li>
+<li><p>U.S. Bureau of Economic Analysis construct <strong>Personal Consumption Expenditure</strong> (PCE) price index, which is similar to <strong>CPI</strong>, measures consumer related goods and services as well. <a href="https://www.bea.gov/news/2021/personal-income-and-outlays-may-2021">PCE</a> <a href="https://www.clevelandfed.org/newsroom-and-events/publications/economic-trends/2014-economic-trends/et-20140417-pce-and-cpi-inflation-whats-the-difference.aspx">Difference</a></p></li>
+</ul>
+<p>Question: Are housing prices included in CPI? <a href="https://www.marketwatch.com/story/an-inflation-storm-is-coming-for-the-u-s-housing-market-11623419869">Rental cost vs. Housing Price</a></p>
+<p>Question: Are food and energy prices included in CPI and PCE? How about core CPI and PCE?</p>
+</div>
+<div id="chain-rule-in-nominal-gdp-and-real-gdp" class="slide section level2">
+<h1>Chain rule in nominal GDP and real GDP</h1>
+<p>Example:</p>
+<table>
+<caption>Illustrate chain rule in nominal GDP and real GDP</caption>
+<thead>
+<tr class="header">
+<th align="right">Year</th>
+<th align="right">Quantity (Cars)</th>
+<th align="right">Price (cars)</th>
+<th align="right">Quantity (Gas)</th>
+<th align="right">Price (Gas)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">2019</td>
+<td align="right">20</td>
+<td align="right">25</td>
+<td align="right">20</td>
+<td align="right">2.0</td>
+</tr>
+<tr class="even">
+<td align="right">2020</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td align="right">10</td>
+<td align="right">1.5</td>
+</tr>
+<tr class="odd">
+<td align="right">2021</td>
+<td align="right">20</td>
+<td align="right">30</td>
+<td align="right">20</td>
+<td align="right">3.0</td>
+</tr>
+</tbody>
+</table>
+<p>Nominal GDP: <span class="math display">\[
+Y_{2019}^{n}=P_{2019}^{C}Q_{2019}^{C}+P_{2019}^{G}Q_{2019}^{G}=25\times20+2\times20=540\\
+Y_{2020}^{n}=P_{2020}^{C}Q_{2020}^{C}+P_{2020}^{G}Q_{2020}^{G}=20\times10+1.5\times10=215\\
+Y_{2021}^{n}=P_{2021}^{C}Q_{2021}^{C}+P_{2021}^{G}Q_{2021}^{G}=30\times20+3\times20=660
+\]</span></p>
+<p>Real GDP (2020 as base year): <span class="math display">\[
+Y_{2019}^{r}=P_{2020}^{C}Q_{2019}^{C}+P_{2020}^{G}Q_{2019}^{G}=20\times20+1.5\times20=430\\
+Y_{2020}^{r}=Y_{2020}^{r}=215\\
+Y_{2021}^{r}=P_{2020}^{C}Q_{2021}^{C}+P_{2020}^{G}Q_{2021}^{G}=20\times20+1.5\times20=430
+\]</span></p>
+</div>
+<div id="chain-rule-in-nominal-gdp-and-real-gdp-1" class="slide section level2">
+<h1>Chain rule in nominal GDP and real GDP</h1>
+<p>Real GDP in 2021 just rebounds to the level in 2019! Real GDP growth in 2020 is <span class="math inline">\(\frac{215-430}{430}=-50\%\)</span>; whereas real GDP growth in 2021 is <span class="math inline">\(\frac{430-215}{215}=100\%\)</span>.</p>
+<p>Since 2020 is base year, GDP deflator is <span class="math inline">\(P_{2020}=\frac{Y_{2020}^{n}}{Y_{2020}^{r}}=1\)</span>.</p>
+<p>The GDP deflator for 2019 is <span class="math inline">\(P_{2019}=\frac{Y_{2019}^{n}}{Y_{2019}^{r}}=\frac{540}{430}=125.58\%\)</span>.</p>
+<p>The GDP deflator for 2021 is <span class="math inline">\(P_{2021}=\frac{Y_{2021}^{n}}{Y_{2021}^{r}}=\frac{660}{430}=153.49\%\)</span>.</p>
+<p>The GDP deflator inflation for 2021 is <span class="math inline">\(\frac{Y_{2021}^{n}-Y_{2020}^{n}}{Y_{2020}^{n}}-\frac{Y_{2021}^{r}-Y_{2020}^{r}}{Y_{2020}^{r}}=\frac{660-215}{215}-\frac{430-215}{215}=206.98\%-1=106.98\%\)</span></p>
+<p>If we use 2019 as base year, then real GDP would be:</p>
+<p><span class="math display">\[
+Y_{2019}^{r}=Y_{2019}^{r}=540\\
+Y_{2020}^{r}=P_{2019}^{C}Q_{2020}^{C}+P_{2019}^{G}Q_{2020}^{G}=25\times10+2\times10=270\\
+Y_{2021}^{r}=P_{2019}^{C}Q_{2021}^{C}+P_{2019}^{G}Q_{2021}^{G}=25\times20+2\times20=540
+\]</span> Real GDP growth in 2020 is <span class="math inline">\(\frac{270-540}{540}=-50\%\)</span>; whereas real GDP growth in 2021 is <span class="math inline">\(\frac{540-270}{270}=100\%\)</span>.</p>
+</div>
+<div id="chain-rule-in-nominal-gdp-and-real-gdp-2" class="slide section level2">
+<h1>Chain rule in nominal GDP and real GDP</h1>
+<p>Since 2019 is base year, GDP deflator is <span class="math inline">\(P_{2019}=\frac{Y_{2019}^{n}}{Y_{2019}^{r}}=1\)</span>.</p>
+<p>The GDP deflator for 2020 is <span class="math inline">\(P_{2020}=\frac{Y_{2020}^{n}}{Y_{2020}^{r}}=\frac{215}{270}=79.63\%\)</span>.</p>
+<p>The GDP deflator for 2021 is <span class="math inline">\(P_{2021}=\frac{Y_{2021}^{n}}{Y_{2021}^{r}}=\frac{660}{540}=122.22\%\)</span>.</p>
+<p>The GDP deflator inflation for 2020 is <span class="math inline">\(\frac{Y_{2020}^{n}-Y_{2019}^{n}}{Y_{2019}^{n}}-\frac{Y_{2020}^{r}-Y_{2019}^{r}}{Y_{2019}^{r}}=\frac{215-540}{540}-\frac{270-540}{540}=-60.19\%-(-50\%)=-10.19\%\)</span></p>
+<p>The GDP deflator inflation for 2021 is <span class="math inline">\(\frac{Y_{2021}^{n}-Y_{2020}^{n}}{Y_{2020}^{n}}-\frac{Y_{2021}^{r}-Y_{2020}^{r}}{Y_{2020}^{r}}=\frac{660-215}{215}-\frac{540-270}{270}=206.98\%-100\%=106.98\%\)</span></p>
+<p>Base year matters!</p>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

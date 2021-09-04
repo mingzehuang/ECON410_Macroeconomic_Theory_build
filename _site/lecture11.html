@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Mingze Huang" />
+  <meta name="date" content="2021-08-05" />
+  <title>Lecture 11: Aggregate Supply</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="site_libs/slidy-2/scripts/slidy.js"></script>
+  <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Lecture 11: Aggregate Supply</h1>
+  <p class="author">
+Mingze Huang
+  </p>
+  <p class="date">2021-08-05</p>
+</div>
+<div id="inflation-and-expected-price-level" class="slide section level2">
+<h1>Inflation and Expected Price Level</h1>
+<p>Recall labor market condition:</p>
+<p><span class="math display">\[
+\begin{cases}
+W=P\cdot F(u, z)           &amp; \text{wage-setting relation}  \\
+P=(1+\mu)W   &amp; \text{price-setting relation}
+\end{cases}
+\]</span> The solution is that: equilibrium real wage <span class="math inline">\(\frac{W}{P}=\frac{1}{1+\mu}\)</span> and equilibrium unemployment rate (natural rate of unemployment <span class="math inline">\(u_{n}\)</span>) satisfies <span class="math inline">\(\frac{1}{1+\mu}=F(u_{n}, z)\)</span>.</p>
+<ul>
+<li><p>Note that this solution is nothing related to nominal variable: nominal wage <span class="math inline">\(W\)</span> or price <span class="math inline">\(P\)</span>.</p></li>
+<li><p>Instead, it tells us the equilibrium level of the ratio between those two variables: real wage <span class="math inline">\(\frac{W}{P}\)</span> is fixed given <span class="math inline">\(\mu\)</span>.</p></li>
+<li><p>In other words, it tells us nominal wage <span class="math inline">\(W\)</span> grows as fast as price level <span class="math inline">\(P\)</span> on labor market equilibrium.</p></li>
+</ul>
+</div>
+<div id="inflation-and-expected-price-level-1" class="slide section level2">
+<h1>Inflation and Expected Price Level</h1>
+<p>However, there is always an intertemporal decision making process in real life:</p>
+<ul>
+<li><p>Workers get nominal wages <span class="math inline">\(W\)</span> in this period, but spend their wages to cover their living cost in next period. No one knows the aggregate price level in next period, so the evaluation on real wage is actually based on workers expectation on future price level (expected price level <span class="math inline">\(P^{e}\)</span>).</p></li>
+<li><p>Now wage-setting relation can be modified as <span class="math inline">\(W=P^{e}\cdot F(u, z)\)</span>. The higher the expected price level <span class="math inline">\(P^{e}\)</span>, the higher nominal wage <span class="math inline">\(W\)</span> workers require.</p></li>
+<li><p>Firms sell goods at current price level <span class="math inline">\(P\)</span>, and pay nominal wage <span class="math inline">\(W\)</span>. so there is no change on price-setting relation <span class="math inline">\(P=(1+\mu)W\)</span>.</p></li>
+</ul>
+<p>The modified version of labor market condition as follow:</p>
+<p><span class="math display">\[
+\begin{cases}
+W=P^{e}\cdot F(u, z)           &amp; \text{wage-setting relation}  \\
+P=(1+\mu)W   &amp; \text{price-setting relation}
+\end{cases}
+\]</span></p>
+</div>
+<div id="inflation-and-expected-price-level-2" class="slide section level2">
+<h1>Inflation and Expected Price Level</h1>
+<p>This modified labor market condition is more general:</p>
+<ul>
+<li><p>Workers do not necessarily predict future price level correctly. The expected price level (<span class="math inline">\(P^{e}\)</span>), the realized future price level (we can denote it as <span class="math inline">\(P&#39;\)</span>) and the current price level (<span class="math inline">\(P\)</span>) may be different from each other.</p></li>
+<li><p>The previous version of labor market equilibrium is a special case: workers’ expectation is correct and price level won’t change in the future (e.g. <span class="math inline">\(P^{e}=P&#39;=P\)</span>), and also equilibrium unemployment rate is natural rate of unemployment <span class="math inline">\(u_{n}\)</span> satisfies <span class="math inline">\(\frac{1}{1+\mu}=F(u_{n}, z)\)</span>.</p></li>
+</ul>
+<p>Now since expected price level (<span class="math inline">\(P^{e}\)</span>) is given by workers’ expectation (exogenous), wage-setting relation <span class="math inline">\(W=P^{e}\cdot F(u, z)\)</span> no longer depends on current price level <span class="math inline">\(P\)</span>.</p>
+<p>To simplify our analysis, plug wage-setting relation <span class="math inline">\(W=P^{e}\cdot F(u, z)\)</span> into price-setting relation <span class="math inline">\(P=(1+\mu)W\)</span>:</p>
+<p><span class="math display">\[
+P=P^{e}\cdot (1+\mu)F(u, z)
+\]</span></p>
+<p>It looks nice since we phased out labor market specific variable: nominal wage (<span class="math inline">\(W\)</span>). But there is still another labor market specific variable: unemployment rate (<span class="math inline">\(u\)</span>). If we can substitute out <span class="math inline">\(u\)</span> by some way, that would be even better!</p>
+</div>
+<div id="employment-and-output" class="slide section level2">
+<h1>Employment and Output</h1>
+<p>Recall definition of unemployment rate: <span class="math inline">\(u=\frac{U}{L}=\frac{L-N}{L}=1-\frac{N}{L}\)</span></p>
+<ul>
+<li>where <span class="math inline">\(U\)</span> denote unemployment, <span class="math inline">\(N\)</span> denote employment and <span class="math inline">\(L\)</span> the labor force.</li>
+</ul>
+<p>Rearranging it, we have: <span class="math inline">\(N=L(1-u)\)</span>.</p>
+<p>Recall simplified production function <span class="math inline">\(Y^{r}=N\)</span>.</p>
+<ul>
+<li>Obviously the output in production function is real output (real GDP), to make it clear, we denoted as <span class="math inline">\(Y^{r}\)</span>.</li>
+</ul>
+<p>Now we do reverse engineering, <span class="math inline">\(u=1-\frac{N}{L}=1-\frac{Y^{r}}{L}\)</span> and plug into our price-unemployment equation:<span class="math inline">\(P=P^{e}\cdot (1+\mu)F(u, z)\)</span>: <span class="math display">\[
+P\equiv P^{e}(1+\mu)F(1-\frac{Y^{r}}{L},z)
+\]</span> - It implies that: we don’t necessarily deal with natural unemployment rate (<span class="math inline">\(u\)</span>) directly; Instead, we have some relation between current price level (<span class="math inline">\(P\)</span>) and output level (<span class="math inline">\(Y^{r}\)</span>).</p>
+</div>
+<div id="aggregate-supply" class="slide section level2">
+<h1>Aggregate Supply</h1>
+<ul>
+<li><p>Now expected price level (<span class="math inline">\(P^{e}\)</span>) is given by workers’ expectation; mark-up (<span class="math inline">\(\mu\)</span>) is given by goods market competition; labor force (<span class="math inline">\(L\)</span>) is given by work-leisure trade-off of labor participants; <span class="math inline">\(z\)</span> is given catchall variable. All of them are exogenous variables (given outside of the model).</p></li>
+<li><p>Only two variables are endogenous (determined inside the model): current price (<span class="math inline">\(P\)</span>) and output (<span class="math inline">\(Y^{r}\)</span>)</p></li>
+<li><p>Maybe we can draw some graph about price-output (quantity) similar to supply curve in microeconomics! <a href="tenor.gif">BINGO!!!</a></p></li>
+<li><p>This curve derived from production function and labor market condition, it characterizes the supply side of macro-economy, we call it <strong>aggregate supply curve (AS)</strong>.</p></li>
+<li><p>The higher the real output (<span class="math inline">\(Y^{r}\)</span>), the lower the unemployment rate <span class="math inline">\(1-\frac{Y^{r}}{L}\)</span>. Since <span class="math inline">\(F(\cdot)\)</span> is decreasing function on unemployment rate <span class="math inline">\(u=1-\frac{Y^{r}}{L}\)</span>, current price level (<span class="math inline">\(P\)</span>) goes higher (Upward-sloping curve if <span class="math inline">\(P\)</span> is on vertical axis and <span class="math inline">\(Y^{r}\)</span> on horizontal axis).</p></li>
+</ul>
+</div>
+<div id="natural-employment-and-natural-output" class="slide section level2">
+<h1>Natural Employment and Natural Output</h1>
+<p>Now plug the equilibrium unemployment rate (natural rate of unemployment) in: <span class="math inline">\(N_{n}=L(1-u_{n})\)</span>.</p>
+<ul>
+<li><strong>Natural level of employment</strong> <span class="math inline">\(N_{n}\)</span> is equal to labor force <span class="math inline">\(L\)</span> times natural rate of employment (e.g. 1 minus natural rate of unemployment <span class="math inline">\(u_{n}\)</span>).</li>
+</ul>
+<p>Recall simplified production function <span class="math inline">\(Y^{r}=N\)</span>. Plug natural employment <span class="math inline">\(N_{n}\)</span> in, we get <span class="math inline">\(Y_{n}^{r}=N_{n}\)</span>.</p>
+<ul>
+<li>Here <span class="math inline">\(Y_{n}\)</span> is the output level corresponding to natural rate of unemployment <span class="math inline">\(u_{n}\)</span>, we call it <strong>natural output</strong>.</li>
+</ul>
+<p>Since on labor market equilibrium:</p>
+<ul>
+<li><p>Workers’ expectation is correct and price level won’t change in the future (e.g. <span class="math inline">\(P^{e}=P&#39;=P\)</span>).</p></li>
+<li><p>Equilibrium unemployment rate is natural rate of unemployment <span class="math inline">\(u_{n}\)</span>, so that output on natural output level <span class="math inline">\(Y^{r}=Y_{n}^{r}\)</span>.</p></li>
+</ul>
+<p>The Aggregate Supply (AS) curve goes through labor market equilibrium point where <span class="math inline">\(P=P^{e}\)</span> and <span class="math inline">\(Y^{r}=Y_{n}^{r}\)</span>.</p>
+</div>
+<div id="aggregate-supply-1" class="slide section level2">
+<h1>Aggregate Supply</h1>
+<p><img src="AS.png" /></p>
+<ul>
+<li><p>When output (<span class="math inline">\(Y&#39;^{r}\)</span>) goes above the natural output level (<span class="math inline">\(Y_{n}^{r}\)</span>), the price level (<span class="math inline">\(P&#39;\)</span>) would be higher than expected price level (<span class="math inline">\(P^{e}\)</span>).</p></li>
+<li><p>When output (<span class="math inline">\(Y&#39;^{r}\)</span>) goes below the natural output level (<span class="math inline">\(Y_{n}^{r}\)</span>), the price level (<span class="math inline">\(P&#39;\)</span>) would be lower than expected price level (<span class="math inline">\(P^{e}\)</span>).</p></li>
+</ul>
+</div>
+<div id="aggregate-supply-2" class="slide section level2">
+<h1>Aggregate Supply</h1>
+<p><img src="ASshift.png" /></p>
+<ul>
+<li><p>An increase in expected price level (<span class="math inline">\(P^{e}\)</span>), shift the aggregate supply (AS) curve up.</p></li>
+<li><p>A decrease in expected price level (<span class="math inline">\(P^{e}\)</span>), shift the aggregate supply (AS) curve down.</p></li>
+</ul>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

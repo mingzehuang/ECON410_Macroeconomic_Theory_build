@@ -1,0 +1,39 @@
+---
+title: 'Lecture 8: Labor Market'
+author: "Mingze Huang"
+date: "`r Sys.Date()`"
+output: slidy_presentation
+---
+
+## Labor Market
+
+Recall IS-LM model, there are several pitfalls:
+
+  - No labor market in IS-LM model (only goods market and financial market). [Job Report from Dept. of Labor](https://www.cnbc.com/2021/07/08/us-weekly-jobless-claims.html)
+  
+  - No too much discussion on general price level or inflation. [Monthly Inflation](https://www.cnbc.com/2021/07/13/consumer-price-index-increases-5point4percent-in-june-vs-5percent-estimate.html)
+  
+However, unemployment, wage and inflation play key roles in modern economy, especially for policy-makers. [Wage vs Inflation](https://www.cnbc.com/2021/07/08/the-upside-to-inflation-rising-wages.html)
+
+## Labor Market
+
+Let's extend our analysis from short run to medium run, and start from labor market:
+
+  - Workers are typically paid a wage that exceeds their **reservation wage**, the wage that would make them indifferent between working or being unemployed.
+
+  - Wages typically depend on labor market conditions. The lower the unemployment rate, the higher the wages.
+
+  - Bargaining power:
+
+  - How much bargaining power a worker has depends first on the nature of the job. [Unionize Amazon Workers](https://www.cnbc.com/2021/06/22/teamsters-to-vote-thursday-on-sweeping-push-to-unionize-amazon-workers.html)
+  
+  - How much bargaining power a worker has also depends on **labor market condition**.
+  
+    - When the unemployment rate is low, it is more difficult for firms to find qualified replacement workers. [Labor Shortage](https://www.businessinsider.com/labor-shortage-restaurants-hospitality-temporarily-close-food-work-jobs-employment-2021-7)
+    
+    - When the unemployment rate is high, finding another job is harder for workers.
+
+- Economists call the theories that link *productivity* and *efficiency* of workers to the wage as **efficiency wage theories**.
+
+  - Firms - such as high-tech firms - that see employee morale and commitment as essential to the quality of their work will pay more than firms in sectors where workers' activities are more routine. [Glassdoor](https://www.glassdoor.com/Salary/Texas-A-and-M-University-Salaries-E1077312.htm)
+  

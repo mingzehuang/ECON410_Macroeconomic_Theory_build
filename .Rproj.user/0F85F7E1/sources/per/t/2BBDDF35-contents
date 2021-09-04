@@ -1,0 +1,58 @@
+---
+title: "Lecture Notes"
+---
+
+<style>
+  .col2 {
+    columns: 2 300px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 300px; /* chrome, safari */
+    -moz-columns: 2 300px;    /* firefox */
+  }
+  .col3 {
+    columns: 3 100px;
+    -webkit-columns: 3 100px;
+    -moz-columns: 3 100px;
+  }
+</style>
+
+<div class="col3">
+
+[Lecture 1](lecture1.html)
+
+[Lecture 2](lecture2.html)
+
+[Lecture 3](lecture3.html)
+
+[Lecture 4](lecture4.html)
+
+[Lecture 5](lecture5.html)
+
+[Lecture 6](lecture6.html)
+
+[Lecture 7](lecture7.html)
+
+[Lecture 8](lecture8.html)
+
+[Lecture 9](lecture9.html)
+
+[Lecture 10](lecture10.html)
+
+[Lecture 11](lecture11.html)
+
+[Lecture 12](lecture12.html)
+
+[Lecture 13](lecture13.html)
+
+[Lecture 14](lecture14.html)
+
+[Lecture 15](lecture15.html)
+
+[Lecture 16](lecture16.html)
+
+[Lecture 17](lecture17.html)
+
+[Lecture 18](lecture18.html)
+
+[Lecture 19](lecture19.html)
+
+</div>

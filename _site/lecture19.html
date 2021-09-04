@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Mingze Huang" />
+  <meta name="date" content="2021-08-05" />
+  <title>Lecture 19: Long Run Economic Growth (continued)</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="site_libs/slidy-2/scripts/slidy.js"></script>
+  <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Lecture 19: Long Run Economic Growth (continued)</h1>
+  <p class="author">
+Mingze Huang
+  </p>
+  <p class="date">2021-08-05</p>
+</div>
+<div id="investment-and-capital-accumulation" class="slide section level2">
+<h1>Investment and Capital Accumulation</h1>
+<p>Assume that private saving is proportional to income: <span class="math inline">\(S=s\cdot Y\)</span></p>
+<ul>
+<li><span class="math inline">\(s\)</span> is saving rate (<span class="math inline">\(0&lt;s&lt;1\)</span>).</li>
+</ul>
+<p>Combine <span class="math inline">\(I=S\)</span> and <span class="math inline">\(S=s\cdot Y\)</span>, in year <span class="math inline">\(t\)</span> we have: <span class="math inline">\(I_{t}=s\cdot Y_{t}\)</span>.</p>
+<p>Investment is proportional to output: higher output implies higher saving, then higher investment.</p>
+<p>The evolution of capital stock is given by: <span class="math inline">\(K_{t+1}=(1-\delta)K_{t}+I_{t}\)</span>.</p>
+<p>Substitute <span class="math inline">\(I_{t}\)</span> by <span class="math inline">\(I_{t}=s\cdot Y_{t}\)</span> and divide both sides by <span class="math inline">\(N\)</span>: <span class="math inline">\(\frac{K_{t+1}}{N}=(1-\delta)\frac{K_{t}}{N}+s\frac{Y_{t}}{N}\)</span>.</p>
+<p>Rearrange it: <span class="math inline">\(\frac{K_{t+1}}{N}-\frac{K_{t}}{N}=s\frac{Y_{t}}{N}-\delta\frac{K_{t}}{N}\)</span>.</p>
+<p>Plug <span class="math inline">\(\frac{Y_{t}}{N}=f(\frac{K_{t}}{N})\)</span> in: <span class="math display">\[
+\frac{K_{t+1}}{N}-\frac{K_{t}}{N}=s\cdot f(\frac{K_{t}}{N})-\delta\frac{K_{t}}{N}
+\]</span></p>
+</div>
+<div id="investment-and-capital-accumulation-1" class="slide section level2">
+<h1>Investment and Capital Accumulation</h1>
+<ul>
+<li><p>The left hand side <span class="math inline">\(\frac{K_{t+1}}{N}-\frac{K_{t}}{N}\)</span> is change in capital from year <span class="math inline">\(t\)</span> to year <span class="math inline">\(t+1\)</span>.</p></li>
+<li><p>The first term of right hand side <span class="math inline">\(s\cdot f(\frac{K_{t}}{N})\)</span> is investment during year <span class="math inline">\(t\)</span>.</p></li>
+<li><p>The second term of right hand side <span class="math inline">\(\delta\frac{K_{t}}{N}\)</span> is depreciation during year <span class="math inline">\(t\)</span>.</p></li>
+</ul>
+<p>So the change in capital from year <span class="math inline">\(t\)</span> to year <span class="math inline">\(t+1\)</span> equals to investment during year <span class="math inline">\(t\)</span> minus depreciation during year <span class="math inline">\(t\)</span>.</p>
+<p>The equation tells us:</p>
+<ul>
+<li><p>If investment per worker exceeds depreciation per worker, the change in capital per worker is positive: capital per worker increases.</p></li>
+<li><p>If investment per worker is less than depreciation per worker, the change in capital per worker is negative: capital per worker decreases.</p></li>
+</ul>
+</div>
+<div id="investment-and-capital-accumulation-2" class="slide section level2">
+<h1>Investment and Capital Accumulation</h1>
+<p><img src="growth4.png" /></p>
+</div>
+<div id="steady-state-capital-and-output" class="slide section level2">
+<h1>Steady-state Capital and Output</h1>
+<p>The state in which output per worker and capital per worker are no longer changing is called <strong>steady state</strong> of the economy.</p>
+<p>Recall the evolution of capital per worker: <span class="math display">\[
+\frac{K_{t+1}}{N}-\frac{K_{t}}{N}=s\cdot f(\frac{K_{t}}{N})-\delta\frac{K_{t}}{N}
+\]</span></p>
+<ul>
+<li>In steady state, no change in capital per worker, so that the left hand side <span class="math inline">\(\frac{K_{t+1}}{N}-\frac{K_{t}}{N}=0\)</span>. Thus the investment should be equal to depreciation since right hand side <span class="math inline">\(s\cdot f(\frac{K_{t}}{N})-\delta\frac{K_{t}}{N}\)</span> has to equal to zero.</li>
+</ul>
+<p>If we denote the steady-state capital per worker as <span class="math inline">\(\frac{K^*}{N}\)</span>, then: <span class="math display">\[
+s\cdot f(\frac{K^*}{N})=\delta\frac{K^*}{N}
+\]</span></p>
+<p>Given steady-state capital per worker, <span class="math inline">\(\frac{K^*}{N}\)</span>, we can denote steady-state output per worker as <span class="math inline">\(\frac{Y*}{N}\)</span>, so that: <span class="math display">\[
+\frac{Y^*}{N}=f(\frac{K^*}{N})
+\]</span></p>
+</div>
+<div id="the-saving-rate-and-output" class="slide section level2">
+<h1>The Saving Rate and Output</h1>
+<p><img src="growth5.png" /></p>
+<p>How does saving rate affect growth rate of output per worker?</p>
+<ul>
+<li><p>Saving rate has no effect on long run growth rate of output per worker, which is equal to zero.</p></li>
+<li><p>Saving rate determines the level of output per worker in long run.</p></li>
+</ul>
+</div>
+<div id="the-saving-rate-and-output-1" class="slide section level2">
+<h1>The Saving Rate and Output</h1>
+<p>Since increase in saving rate can increase long run steady-state output per worker, why not save all?</p>
+<ul>
+<li><p>The goal for economic growth is to increase consumption, not investment. Although saving (investment) can boost future output per worker so that boost future consumption, you will die before you see future consumption if you save all…</p></li>
+<li><p>In steady state, saving (investment) always equal to depreciation. If saving rate is too high, the proportion of consumption is very low…</p></li>
+</ul>
+<p><img src="growth6.png" /></p>
+</div>
+<div id="economic-growth-in-real-world" class="slide section level2">
+<h1>Economic Growth in Real World</h1>
+<p>Foreign Aid vs. Saving ?</p>
+<ul>
+<li><p><a href="https://www.bbc.com/news/world-us-canada-57387350">Kamala Harris tells Guatemala migrants: ‘Do not come to US’</a></p></li>
+<li><p><a href="https://explorer.usaid.gov/cd/GTM?fiscal_year=2019&amp;measure=Obligations">$157m ($9.46 per capita) US aid to Guatemala in 2019</a></p></li>
+<li><p><a href="https://explorer.usaid.gov/cd/IND?fiscal_year=2019&amp;measure=Obligations">$793m ($4 per capita) US aid to Nigeria in 2019</a></p></li>
+<li><p><a href="https://explorer.usaid.gov/cd/CHN?fiscal_year=2019&amp;measure=Obligations">$29m ($0.02 per capita) US aid to China in 2019</a></p></li>
+<li><p><a href="https://explorer.usaid.gov/cd/IND?fiscal_year=2019&amp;measure=Obligations">$97m ($0.07 per capita) US aid to India in 2019</a></p></li>
+<li><p><a href="https://ourworldindata.org/grapher/real-gdp-per-capita-pennwt?country=CHN~IND~GTM~NGA">Real GDP per capita for 4 countries</a></p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Gross_national_savings_by_country">Gross saving rate by country</a></p></li>
+</ul>
+<p><strong>Saving matters!</strong></p>
+<p>More reasons…</p>
+<p><a href="https://theconversation.com/money-alone-cant-fix-central-america-or-stop-migration-to-us-157953">Money alone can’t fix Central America – or stop migration to US</a></p>
+<p><a href="https://liberalarts.tamu.edu/economics/2021/07/15/edwin-felipe-morales-cal-july-2021/">More Information Contact Amazing Student (Alumni) of Dept. of Economics</a></p>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

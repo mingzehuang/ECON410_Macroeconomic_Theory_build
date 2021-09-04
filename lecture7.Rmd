@@ -1,0 +1,36 @@
+---
+title: 'Lecture 7: Monetary Policy Tools'
+author: "Mingze Huang"
+date: "`r Sys.Date()`"
+output: slidy_presentation
+---
+
+## Monetary Policy Tools
+
+Recall that we assume money supply ($M$) set by central bank (e.g. Federal Reserve System).
+
+[Monetary Policy Basic](https://www.federalreserveeducation.org/about-the-fed/structure-and-functions/monetary-policy)
+
+  - The Federal Reserve’s three instruments of monetary policy are open market operations, the discount rate and reserve requirements.
+
+    - Open market operations involve the buying and selling of government securities. Open market operations are flexible, and thus, the most frequently used tool of monetary policy.
+    
+      - Buying government securities to increase money supply, selling government securities to decrease money supply.
+
+    - The discount rate is the interest rate charged by Federal Reserve Banks to depository institutions on short-term loans.
+    
+      - Cutting discount rate to increase money supply, raising discount rate to decrease money supply.
+
+    - Reserve requirements are the portions of deposits that banks must maintain either in their vaults or on deposit at a Federal Reserve Bank.
+    
+      - Lower reserve ratio to increase money supply, higher reserve ratio to decrease money supply.
+
+## Open Market Operation
+
+Monetary policy made by Federal Open Market Committee (FOMC) meeting, the corresponding open market operation is implemented by Federal Reserve Bank of New York.
+
+  - Set a target interest rate [federal funds rate](https://www.federalreserve.gov/monetarypolicy/openmarket.htm), then adjust money supply through open market operation until interest rate fall into the target interval. (e.g. Buying bonds from consumers to boost their money on hand in IS-LM model)
+
+  - [Open Market Operation](https://www.federalreserve.gov/monetarypolicy/bst_openmarketops.htm) 
+  
+  - [System Open Market Account Holdings of Domestic Securities](https://www.newyorkfed.org/markets/soma-holdings)

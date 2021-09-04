@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Mingze Huang" />
+  <meta name="date" content="2021-08-05" />
+  <title>Lecture 3: Introduction (continued)</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="site_libs/slidy-2/scripts/slidy.js"></script>
+  <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Lecture 3: Introduction (continued)</h1>
+  <p class="author">
+Mingze Huang
+  </p>
+  <p class="date">2021-08-05</p>
+</div>
+<div id="chain-rule-in-cpi-not-chained-cpi" class="slide section level2">
+<h1>Chain rule in CPI (Not Chained CPI)</h1>
+<table>
+<caption>Illustrate CPI calculation</caption>
+<thead>
+<tr class="header">
+<th align="right">Year</th>
+<th align="right">Weight (Cars)</th>
+<th align="right">Price (cars)</th>
+<th align="right">Weight (Gas)</th>
+<th align="right">Price (Gas)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">2019</td>
+<td align="right">0.020</td>
+<td align="right">25</td>
+<td align="right">0.25</td>
+<td align="right">2.0</td>
+</tr>
+<tr class="even">
+<td align="right">2020</td>
+<td align="right">0.035</td>
+<td align="right">20</td>
+<td align="right">0.20</td>
+<td align="right">1.5</td>
+</tr>
+<tr class="odd">
+<td align="right">2021</td>
+<td align="right">0.013</td>
+<td align="right">30</td>
+<td align="right">0.20</td>
+<td align="right">3.0</td>
+</tr>
+</tbody>
+</table>
+<p>Take 2020 as base year, assume a representative (average) consumer spend 70% of money on cars, 30% of money on gasoline on 2020. By construction we have Cost of (base year) market basket for 2019~2021 is:</p>
+<p><span class="math display">\[
+C_{2019}=P_{2019}^{C}W_{2020}^{C}+P_{2019}^{G}W_{2020}^{G}=25\times0.035+2\times0.2=1.275\\
+C_{2020}=P_{2020}^{C}W_{2020}^{C}+P_{2020}^{G}W_{2020}^{G}=20\times0.035+1.5\times0.2=1\\
+C_{2021}=P_{2021}^{C}W_{2020}^{C}+P_{2021}^{G}W_{2020}^{G}=30\times0.035+3\times0.2=1.65
+\]</span></p>
+</div>
+<div id="chain-rule-in-cpi" class="slide section level2">
+<h1>Chain rule in CPI</h1>
+<p>By definition, CPI for 2019~2021 is: <span class="math display">\[
+CPI_{2019}=\frac{C_{2019}}{C_{2020}}\times100=127.5\\
+CPI_{2020}=\frac{C_{2020}}{C_{2020}}\times100=100\\
+CPI_{2021}=\frac{C_{2021}}{C_{2020}}\times100=165
+\]</span> <span class="math inline">\(\$1650\)</span>’s purchase power in 2021, probably equivalent to <span class="math inline">\(\$1650\times\frac{127.5}{165}=\$1270\)</span> in 2019!</p>
+<p>CPI inflation for 2020~2021 is:</p>
+<p><span class="math display">\[
+\pi_{2020}=\frac{CPI_{2020}-CPI_{2019}}{CPI_{2019}}\times100\%=\frac{100-127.5}{127.5}\times100\%=-21.57\%\\
+\pi_{2021}=\frac{CPI_{2021}-CPI_{2020}}{CPI_{2020}}\times100\%=65\%
+\]</span></p>
+</div>
+<div id="chain-rule-in-cpi-1" class="slide section level2">
+<h1>Chain rule in CPI</h1>
+<p><a href="https://www.bls.gov/cpi/additional-resources/chained-cpi-questions-and-answers.htm">In practice, BLS use market basket 24 months ago to calculate CPI.</a></p>
+<table>
+<caption>Illustrate CPI calculation</caption>
+<thead>
+<tr class="header">
+<th align="right">Year</th>
+<th align="right">Weight (Cars)</th>
+<th align="right">Price (cars)</th>
+<th align="right">Weight (Gas)</th>
+<th align="right">Price (Gas)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">2019</td>
+<td align="right">0.020</td>
+<td align="right">25</td>
+<td align="right">0.25</td>
+<td align="right">2.0</td>
+</tr>
+<tr class="even">
+<td align="right">2020</td>
+<td align="right">0.035</td>
+<td align="right">20</td>
+<td align="right">0.20</td>
+<td align="right">1.5</td>
+</tr>
+<tr class="odd">
+<td align="right">2021</td>
+<td align="right">0.013</td>
+<td align="right">30</td>
+<td align="right">0.20</td>
+<td align="right">3.0</td>
+</tr>
+</tbody>
+</table>
+<p>Alternatively take 2019 as base year. Note that we assume a representative consumer spend half of money on cars and half on gasoline on 2019. By construction we have Cost of (base year) market basket for 2019~2021 is: <span class="math display">\[
+C_{2019}=P_{2019}^{C}W_{2019}^{C}+P_{2019}^{G}W_{2019}^{G}=25\times0.02+2\times0.25=1\\
+C_{2020}=P_{2020}^{C}W_{2019}^{C}+P_{2020}^{G}W_{2019}^{G}=20\times0.02+1.5\times0.25=0.775\\
+C_{2021}=P_{2021}^{C}W_{2019}^{C}+P_{2021}^{G}W_{2019}^{G}=30\times0.02+3\times0.25=1.35
+\]</span></p>
+</div>
+<div id="chain-rule-in-cpi-2" class="slide section level2">
+<h1>Chain rule in CPI</h1>
+<p>CPI for 2019~2021 is: <span class="math display">\[
+CPI_{2019}=\frac{C_{2019}}{C_{2019}}\times100=100\\
+CPI_{2020}=\frac{C_{2020}}{C_{2019}}\times100=77.5\\
+CPI_{2021}=\frac{C_{2021}}{C_{2020}}\times100=135
+\]</span></p>
+<p><span class="math inline">\(\$1650\)</span>’s purchase power in 2021, probably equivalent to <span class="math inline">\(\$1650\times\frac{100}{135}=\$1222.22\)</span> in 2019!</p>
+<p>Base year matters because your market basket changes!</p>
+<p>CPI inflation for 2020~2021 is:</p>
+<p><span class="math display">\[
+\pi_{2020}=\frac{CPI_{2020}-CPI_{2019}}{CPI_{2019}}\times100\%=\frac{77.5-100}{100}=-22.5\%\\
+\pi_{2021}=\frac{CPI_{2021}-CPI_{2020}}{CPI_{2020}}\times100\%=\frac{135-77.5}{77.5}=74.19\%
+\]</span></p>
+<p><a href="https://www.bls.gov/cpi/additional-resources/chained-cpi-questions-and-answers.htm">CPI vs. Chained CPI</a></p>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

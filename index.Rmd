@@ -1,0 +1,156 @@
+---
+title: "Macroeconomic Theory (Summer 2021)"
+---
+
+### Session: ECON410-200
+
+### Affiliation: Texas A&M University (College Station)
+
+### Instructor: Mingze (Rico) Huang
+
+### Time: 10:00am ~ 11:35am (MTWRF)
+
+### Location: Online Only
+
+**Email**: <sharkmanhmz@tamu.edu>
+
+**Instructor's Website**: <https://mingzehuang.github.io>
+
+**Course Page**: <https://mingzehuang.github.io/ECON410_Macroeconomic_Theory/>
+
+**GitHub Repository**: <https://github.com/mingzehuang/ECON410_Macroeconomic_Theory>
+
+**Lecture Meeting Link** <https://tamu.zoom.us/j/97062446981>
+
+**Instructor's Personal Meeting Link**: <https://tamu.zoom.us/my/mingzehuang>
+
+**Office Hour Appointment Link**: [Google Calendar Link to Schedule an Appointment](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UU9PeGdIZS1pTUFhfGRlZmF1bHR8YTgyYTIzNTQ5OTRiYzJlYzY2M2U3NGIyY2VkNmQyNjA)
+
+**Reference Text Book**: Olivier Blanchard, et.al. Macroeconomics: *An European Perspective* (As a reference, **Not Required**)
+
+**All required contents will be provided through lecture notes absolutely free**.
+
+**Description**: This course is considered to be intermediate level macroeconomic course for undergraduate students. The fundamental models and ideas in modern macroeconomic theory will be introduced. Some basic tools to collect and analyze macroeconomic data will be introduced to catch up with the job market demand in big data era.
+
+**Objectives**: At the end of this course, students are expected be able to use basic macroeconomic ideas and data analysis tools to provide solid economic analysis for contemporary economic issues.
+
+**Prerequisites**: Econ 203: Principle of Economics (Macro) with minimum grade of C. No previous GitHub, R or Python experience required, I'll give you step-by-step tutoring if we use some of them in sometime.
+
+## Tentative Course Outline
+
+- Introduction
+
+  - Pandemic Lockdown, Government Relief Package, Gig Workers and Non-Economic Forces
+
+- The Short Run
+
+  - The Goods Market
+
+  - Financial Markets
+
+  - Goods and Financial Markets: The IS-LM Model
+
+  - The IS-LM Model in an Open Economy
+  
+- The Medium Run
+
+  - The Labor Market
+  
+  - Putting All Markets Together: The AS-AD Model
+  
+  - The Natural Rate of Unemployment and the Philips Curve
+  
+  - Inflation, Activity and Nominal Money Growth
+  
+- The Long Run
+
+  - The Facts of Growth
+  
+  - Saving, Capital Accumulation and Output
+  
+  - Technological Progress and Growth
+  
+## Grading Policy
+
+  - Homework 25%
+  
+  - In-class Quiz 25%
+  
+  - Midterm Project or Presentation 25%
+  
+  - Final Project or Presentation 25%
+
+## Course Policy
+
+  - We have weekly homework, late submission is not acceptable.The late work policy should define what constitutes late work (e.g., submitting a deliverable after the established deadline). Work submitted by a student as makeup work for an excused absence is not considered late work and is exempted from the late work policy. (See [Student Rule 7](https://student-rules.tamu.edu/rule07/)).
+
+  - synchronously attendance is not required if time conflicts happen. All lectures will be recorded automatically in the cloud of zoom. In-class quizzes can make up with completely different problem set if needed. However, you are responsible to your learning outcome if you choose to watch class video instead of attending class on time.
+  - You are encouraged to discuss with your classmates via [discussion board](https://canvas.tamu.edu/courses/72016/discussion_topics), but you must write up your homework independently.
+  
+  - Missing one class could easily lead to a disastrous domino effect. Please check our [course page](https://mingzehuang.github.io/macroeconomics.html) and your [Canvas](https://canvas.tamu.edu/courses/72016) for the lecture notes, homework, quizzes and video regularly.
+
+# University Policies
+
+This section outlines the university level policies. The TAMU Faculty Senate established the wording of these policies.
+
+[NOTE: Faculty members should not change the written statements. A faculty member may add separate paragraphs if additional information is needed.]
+
+## Attendance Policy
+
+The university views class attendance and participation as an individual student responsibility. Students are expected to attend class and to complete all assignments.
+
+Please refer to [Student Rule 7](https://student-rules.tamu.edu/rule07/) in its entirety for information about excused absences, including definitions, and related documentation and timelines.
+
+## Makeup Work Policy
+
+Students will be excused from attending class on the day of a graded activity or when attendance contributes to a student’s grade, for the reasons stated in Student Rule 7, or other reason deemed appropriate by the instructor.
+
+Please refer to [Student Rule 7](https://student-rules.tamu.edu/rule07/) in its entirety for information about makeup work, including definitions, and related documentation and timelines.
+
+Absences related to Title IX of the Education Amendments of 1972 may necessitate a period of more than 30 days for make-up work, and the timeframe for make-up work should be agreed upon by the student and instructor” [(Student Rule 7, Section 7.4.1)](https://student-rules.tamu.edu/rule07/).
+
+“The instructor is under no obligation to provide an opportunity for the student to make up work missed because of an unexcused absence” [(Student Rule 7, Section 7.4.2)](https://student-rules.tamu.edu/rule07/).
+
+Students who request an excused absence are expected to uphold the Aggie Honor Code and Student Conduct Code. [(See Student Rule 24)](https://student-rules.tamu.edu/rule24/).
+
+## Academic Integrity Statement and Policy
+
+“An Aggie does not lie, cheat or steal, or tolerate those who do.”
+
+“Texas A&M University students are responsible for authenticating all work submitted to an instructor. If asked, students must be able to produce proof that the item submitted is indeed the work of that student. Students must keep appropriate records at all times. The inability to authenticate one’s work, should the instructor request it, may be sufficient grounds to initiate an academic misconduct case” [(Section 20.1.2.3, Student Rule 20)](https://aggiehonor.tamu.edu/Rules-and-Procedures/Rules/Honor-System-Rules).
+
+### Texas A&M at College Station
+
+You can learn more about the Aggie Honor System Office Rules and Procedures, academic integrity, and your rights and responsibilities at <https://aggiehonor.tamu.edu>.
+
+## Americans with Disabilities Act (ADA) Policy
+
+Texas A&M University is committed to providing equitable access to learning opportunities for all students. If you experience barriers to your education due to a disability or think you may have a disability, please contact Disability Resources office on your campus (resources listed below). Disabilities may include, but are not limited to attentional, learning, mental health, sensory, physical, or chronic health conditions. All students are encouraged to discuss their disability related needs with Disability Resources and their instructors as soon as possible.
+
+### Texas A&M at College Station
+
+Disability Resources is located in the Student Services Building or at (979) 845-1637 or visit <https://disability.tamu.edu>.
+
+## Title IX and Statement on Limits to Confidentiality
+
+Texas A&M University is committed to fostering a learning environment that is safe and productive for all. University policies and federal and state laws prohibit gender-based discrimination and sexual harassment, including sexual assault, sexual exploitation, domestic violence, dating violence, and stalking.
+
+With the exception of some medical and mental health providers, all university employees (including full and part-time faculty, staff, paid graduate assistants, student workers, etc.) are Mandatory Reporters and must report to the Title IX Office if the employee experiences, observes, or becomes aware of an incident that meets the following conditions [(see University Rule 08.01.01.M1)](https://rules-saps.tamu.edu/PDFs/08.01.01.M1.pdf):
+
+  - The incident is reasonably believed to be discrimination or harassment.
+  
+  - The incident is alleged to have been committed by or against a person who, at the time of the incident, was (1) a student enrolled at the University or (2) an employee of the University.
+
+Mandatory Reporters must file a report regardless of how the information comes to their attention – including but not limited to face-to-face conversations, a written class assignment or paper, class discussion, email, text, or social media post. Although Mandatory Reporters must file a report, in most instances, a person who is subjected to the alleged conduct will be able to control how the report is handled, including whether or not to pursue a formal investigation. The University’s goal is to make sure you are aware of the range of options available to you and to ensure access to the resources you need.
+
+### Texas A&M at College Station
+
+Students wishing to discuss concerns in a confidential setting are encouraged to make an appointment with [Counseling and Psychological Services](https://caps.tamu.edu/) (CAPS). Students can learn more about filing a report, accessing supportive resources, and navigating the Title IX investigation and resolution process on the University’s [Title IX webpage](https://titleix.tamu.edu/).
+
+## Statement on Mental Health and Wellness
+
+Texas A&M University recognizes that mental health and wellness are critical factors that influence a student’s academic success and overall wellbeing. Students are encouraged to engage in healthy self-care by utilizing available resources and services on your campus.
+
+### Texas A&M College Station
+
+Students who need someone to talk to can contact [Counseling & Psychological Services](https://caps.tamu.edu/) (CAPS) or call the [TAMU Helpline](https://caps.tamu.edu/helpline/) (979-845-2700) from 4:00 p.m. to 8:00 a.m. weekdays and 24 hours on weekends. 24-hour emergency help is also available through the National Suicide Prevention Hotline (800-273-8255) or at [suicidepreventionlifeline.org](https://suicidepreventionlifeline.org/).

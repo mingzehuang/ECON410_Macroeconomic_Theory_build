@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Mingze Huang" />
+  <meta name="date" content="2021-08-05" />
+  <title>Lecture 9: Labor Market (continued)</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="site_libs/slidy-2/scripts/slidy.js"></script>
+  <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Lecture 9: Labor Market (continued)</h1>
+  <p class="author">
+Mingze Huang
+  </p>
+  <p class="date">2021-08-05</p>
+</div>
+<div id="wages-determination" class="slide section level2">
+<h1>Wages Determination</h1>
+<p>We capture our discussion of wage determination by using the following equation: <span class="math inline">\(W=P\cdot F\underset{(-, +)}{(u, z)}\)</span>.</p>
+<p>Alternative, we can rearrange the wage determination equation to see real wage: <span class="math inline">\(\frac{W}{P}=F\underset{(-, +)}{(u, z)}\)</span>.</p>
+<p>The aggregate nominal wage <span class="math inline">\(W\)</span> depends on three factors:</p>
+<ul>
+<li><p>The price level <span class="math inline">\(P\)</span>.</p>
+<ul>
+<li>Neither firms nor Workers care about nominal wages <span class="math inline">\(W\)</span>, they care about real wage <span class="math inline">\(\frac{W}{P}\)</span>.</li>
+</ul></li>
+<li><p>The unemployment rate, <span class="math inline">\(u\)</span>.</p>
+<ul>
+<li>The higher the unemployment rate <span class="math inline">\(u\)</span>, the lower the real wage <span class="math inline">\(\frac{W}{P}\)</span>.</li>
+</ul></li>
+<li><p>A catchall variable, <span class="math inline">\(z\)</span>, that stands for all other variables that may affect the outcome of wage setting.</p>
+<ul>
+<li><p>Unemployment benefit <a href="https://www.cnbc.com/2021/07/16/delta-variant-may-fuel-push-to-extend-unemployment-pay-experts-say.html">One more year?</a></p></li>
+<li><p><a href="https://www.dol.gov/agencies/whd/minimum-wage/state#footnote">Minimum wage</a></p></li>
+<li><p><a href="https://abc7ny.com/covid-covid-19-hollywood-florida-restaurant/10556362/">AI Robots Replacement</a> <a href="https://www.youtube.com/watch?v=44KvHwRHb3A">Drone Replacement</a></p></li>
+</ul></li>
+</ul>
+</div>
+<div id="price-determination" class="slide section level2">
+<h1>Price Determination</h1>
+<p>The prices set by firms depend on the costs they face (<a href="https://en.wikipedia.org/wiki/Profit_(economics)">Economic Profit</a>). These costs depend on the nature of the <strong>production function</strong>: <span class="math display">\[
+Y=A\cdot N
+\]</span> where <span class="math inline">\(Y\)</span> is output, <span class="math inline">\(N\)</span> is employment and <span class="math inline">\(A\)</span> is labor productivity. In this simplied production function, we ignore capital (e.g. machines and factories) for a while. We also ignore technological progress and assume <span class="math inline">\(A\)</span> is constant.</p>
+<p>Assume <span class="math inline">\(A=1\)</span>, we have <span class="math inline">\(Y=N\)</span>. This is equivalent to assume one unit of labor produces one unit of goods.</p>
+<p>Since labor cost per unit is wage <span class="math inline">\(W\)</span>, sales revenue per unit is price <span class="math inline">\(P\)</span> (In microeconomics: marginal cost of production - the cost of producing one more unit of output - is equal to <span class="math inline">\(W\)</span>).</p>
+<ul>
+<li><p>Perfect competition on goods market: <span class="math inline">\(P=W\)</span> (marginal revenue equals to marginal cost).</p></li>
+<li><p>General case: <span class="math inline">\(P=(1+\mu)W\)</span> (marginal revenue equals to marginal cost (<span class="math inline">\(\mu=0\)</span>, e.g. perfect competition) greater than marginal cost (<span class="math inline">\(\mu&gt;0\)</span>, e.g. market power)).</p>
+<ul>
+<li>where <span class="math inline">\(\mu\)</span> is the <strong>mark-up</strong> of the price over the cost. It captures economic profit for firms. The higher the degree of competition (the lower the market power of firms), the lower the <strong>mark-up</strong>. The lower the degree of competition (the higher the market power of firms), the higher the <strong>mark-up</strong>.</li>
+</ul></li>
+</ul>
+<p>Alternatively, we can rearrange price determination equation to see real price: <span class="math inline">\(\frac{P}{W}=1+\mu\)</span>.</p>
+</div>
+<div id="labor-market-equilibrium" class="slide section level2">
+<h1>Labor Market Equilibrium</h1>
+<p>Take catchall variable <span class="math inline">\(z\)</span> and mark-up <span class="math inline">\(\mu\)</span> as given (exogenous), this is a two-equation system with two unknown (endogenous) variables: real wage (<span class="math inline">\(\frac{W}{P}\)</span>) (if we treat it as one variable here) and unemployment rate (<span class="math inline">\(u\)</span>). Labor market equilibrium is determined by:</p>
+<p><span class="math display">\[
+\begin{cases}
+\frac{W}{P}=F(u, z)           &amp; \text{wage-setting relation}  \\
+\frac{W}{P}=\frac{1}{1+\mu}   &amp; \text{price-setting relation}
+\end{cases}
+\]</span> The solution is obvious:</p>
+<ul>
+<li><p>The equilibrium level of real wage is uniquely determined by mark-up (<span class="math inline">\(\mu\)</span>) through price-setting relation (e.g. <span class="math inline">\(\frac{W}{P}\equiv\frac{1}{1+\mu}\)</span>) since <span class="math inline">\(\mu\)</span> is given.</p></li>
+<li><p>Plug the equilibrium real wage (<span class="math inline">\(\frac{W}{P}\equiv\frac{1}{1+\mu}\)</span>) into wage setting relation, we get <span class="math inline">\(F(u, z)=\frac{1}{1+\mu}\)</span>. There exist an unique solution <span class="math inline">\(u_{n}\)</span> which satisfies the equation (e.g. <span class="math inline">\(F(u_{n}, z)\equiv\frac{1}{1+\mu}\)</span>) since <span class="math inline">\(\mu\)</span> is given.</p></li>
+</ul>
+<p>In summary, assume catchall variable <span class="math inline">\(z\)</span> is given, for any level of mark-up <span class="math inline">\(\mu\)</span>, there is always an equilibrium real wage level <span class="math inline">\(\frac{W}{P}\equiv\frac{1}{1+\mu}\)</span> and equilibrium unemployment level <span class="math inline">\(u_{n}\)</span> on the labor market.</p>
+<p>Similarly, we can draw this equation system as two curves (WS curve and PS curve) on a 2-dimensional graph since there are two unknown variables (real wage <span class="math inline">\(\frac{W}{P}\)</span> as vertical axis and unemployment rate <span class="math inline">\(u\)</span> as horizontal axis).</p>
+</div>
+<div id="labor-market-equilibrium-1" class="slide section level2">
+<h1>Labor Market Equilibrium</h1>
+<p>Note that price-setting relation comes from firms’ decision, it implies that: given the level of mark-up (<span class="math inline">\(\mu\)</span>) by market competition, the highest real wage <span class="math inline">\(\frac{W}{P}\)</span> the firm is willing to pay is unrelated to unemployment rate <span class="math inline">\(u\)</span>, but uniquely determined by mark-up <span class="math inline">\(\mu\)</span> as <span class="math inline">\(\frac{W}{P}\equiv\frac{1}{1+\mu}\)</span>. (Flat curve)</p>
+<p>The wage-setting relation comes from workers’ decision, the higher the unemployment rate <span class="math inline">\(u\)</span>, the lower the real wage <span class="math inline">\(\frac{W}{P}\)</span> they have to accept (e.g. outside choice).</p>
+<p><img src="labormarket.png" /></p>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

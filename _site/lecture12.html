@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Mingze Huang" />
+  <meta name="date" content="2021-08-05" />
+  <title>Lecture 12: Aggregate Demand</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="site_libs/slidy-2/scripts/slidy.js"></script>
+  <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Lecture 12: Aggregate Demand</h1>
+  <p class="author">
+Mingze Huang
+  </p>
+  <p class="date">2021-08-05</p>
+</div>
+<div id="aggregate-demand" class="slide section level2">
+<h1>Aggregate Demand</h1>
+<p>Recall the policy change effect in IS-LM model, the framework mostly focus on demand side analysis. It enlightens us that we may derive some form of Aggregate Demand (AD) curve from IS-LM model:</p>
+<p><span class="math display">\[
+\begin{cases}
+(1 - c_{1})Y^{r} = c_{0}-c_{1}T+I(i)+G &amp; \text{IS relation}\\
+\frac{M}{P}=Y^{r}\cdot L(i) &amp; \text{LM relation}
+\end{cases}
+\]</span> Since we’ve already got Aggregate Supply (AS) curve on price <span class="math inline">\(P\)</span> and output <span class="math inline">\(Y^{r}\)</span>. Now our goal is to make an Aggregate Demand (AD) curve on price <span class="math inline">\(P\)</span> and output <span class="math inline">\(Y^{r}\)</span> to put on the graph.</p>
+<ul>
+<li><p>In IS-LM model, we assume price level <span class="math inline">\(P\)</span> is given and unchanged in the short run. Here we can simply relax our assumption to endogenize price <span class="math inline">\(P\)</span> (e.g. price <span class="math inline">\(P\)</span> determined inside the model).</p></li>
+<li><p>Output <span class="math inline">\(Y^{r}\)</span> has already there as an endogenous variable (determined inside the model), which is good.</p></li>
+<li><p>There is another endogenous variable: interest rate <span class="math inline">\(i\)</span>, we need to find some way to substitute it away!</p></li>
+</ul>
+</div>
+<div id="aggregate-demand-1" class="slide section level2">
+<h1>Aggregate Demand</h1>
+<p><em>(Not required)</em> One way to git rid of <span class="math inline">\(i\)</span> is to do hardcore mathematical substitution: Rearrange IS relation: <span class="math display">\[
+I(i) = (1 - c_{1})Y^{r}+c_{1}T-c_{0}-G
+\]</span> Solving <span class="math inline">\(i\)</span> by taking inverse function of <span class="math inline">\(I(\cdot)\)</span>: <span class="math display">\[
+i = I^{-1}((1 - c_{1})Y^{r}+c_{1}T-c_{0}-G)
+\]</span> Plug it into LM relation: <span class="math display">\[
+\frac{M}{P}=Y^{r}\cdot L(I^{-1}((1 - c_{1})Y^{r}+c_{1}T-c_{0}-G))
+\]</span></p>
+<ul>
+<li><p>The higher the <span class="math inline">\(Y^{r}\)</span>, the higher the <span class="math inline">\((1 - c_{1})Y^{r}+c_{1}T-c_{0}-G\)</span> since <span class="math inline">\(1 - c_{1}&gt;0\)</span> (marginal propensity to consume <span class="math inline">\(c_{1}&lt;1\)</span>).</p></li>
+<li><p>Since <span class="math inline">\(I(\cdot)\)</span> is decreasing function, its inverse function <span class="math inline">\(I^{-1}(\cdot)\)</span> is decreasing function too. The higher the <span class="math inline">\((1 - c_{1})Y^{r}+c_{1}T-c_{0}-G\)</span>, the lower the <span class="math inline">\(I^{-1}((1 - c_{1})Y^{r}+c_{1}T-c_{0}-G)\)</span>.</p></li>
+<li><p>Since <span class="math inline">\(L(\cdot)\)</span> is decreasing function, the lower the <span class="math inline">\(I^{-1}((1 - c_{1})Y^{r}+c_{1}T-c_{0}-G)\)</span>, the higher the <span class="math inline">\(L(I^{-1}((1 - c_{1})Y^{r}+c_{1}T-c_{0}-G))\)</span>.</p></li>
+</ul>
+</div>
+<div id="aggregate-demand-2" class="slide section level2">
+<h1>Aggregate Demand</h1>
+<p>In summary, the higher <span class="math inline">\(Y^{r}\)</span>, the higher the right hand side of equation since both <span class="math inline">\(Y^{r}\)</span> and <span class="math inline">\(L(I^{-1}((1 - c_{1})Y^{r}+c_{1}T-c_{0}-G))\)</span> go higher. To hold the equality, price <span class="math inline">\(P\)</span> should be lower since nominal money supply <span class="math inline">\(M\)</span> is given.</p>
+<ul>
+<li>In short, the higher output <span class="math inline">\(Y^{r}\)</span>, the lower price level <span class="math inline">\(P\)</span> (downward-sloping curve for the relation between price <span class="math inline">\(P\)</span> and output <span class="math inline">\(Y^{r}\)</span>)! Looks nice and similar to the shape of demand curve in Microeconomics! <a href="bingo.gif">BINGO!!!</a></li>
+</ul>
+<p><strong>(Required)</strong> Another way to derive the Aggregate Demand (AD) curve is more intuitive:</p>
+<ul>
+<li><p>Plot IS-LM model.</p></li>
+<li><p>Change the price level <span class="math inline">\(P\)</span>. Note that in the graph of IS-LM model, the vertical axis is (endogenous variable) interest rate <span class="math inline">\(i\)</span>, not price <span class="math inline">\(P\)</span>! Price <span class="math inline">\(P\)</span> is still exogenous variable here. So the change of price level <span class="math inline">\(P\)</span> should shift LM curve!</p></li>
+<li><p>See what’s happening on output <span class="math inline">\(Y^{r}\)</span>, this is the way to map the relationship of price <span class="math inline">\(P\)</span> and output <span class="math inline">\(Y^{r}\)</span> on a graph with vertical axis <span class="math inline">\(P\)</span> and horizontal axis <span class="math inline">\(Y^{r}\)</span>.</p></li>
+</ul>
+<p>This curve called <strong>Aggregate Demand</strong> (AD) curve since it comes from demand side ajustment in IS-LM model.</p>
+</div>
+<div id="aggregate-demand-3" class="slide section level2">
+<h1>Aggregate Demand</h1>
+<p><img src="AD.png" /></p>
+</div>
+<div id="aggregate-demand-4" class="slide section level2">
+<h1>Aggregate Demand</h1>
+<ul>
+<li>The higher the price level (from <span class="math inline">\(P\)</span> to <span class="math inline">\(P&#39;\)</span>), the lower the output (from <span class="math inline">\(Y^{r}\)</span> to <span class="math inline">\(Y&#39;^{r}\)</span>).</li>
+</ul>
+<p>The intuition goes into IS-LM model:</p>
+<ul>
+<li><p>According to LM relation: <span class="math inline">\(M=P\cdot Y^{r}\cdot L(i)\)</span>. Given nominal money supply <span class="math inline">\(M\)</span> unchanged, the higher the price level <span class="math inline">\(P\)</span>, the lower the amount of goods consumers can afford. So that demand of goods output <span class="math inline">\(Y^{r}\)</span> goes down (income <span class="math inline">\(Y^{r}\)</span> goes down). Also, consumers have less extra money to buy bonds, so bond issuers have to increase interest rate <span class="math inline">\(i\)</span> to attract buyers.</p></li>
+<li><p>In short, the higher price level <span class="math inline">\(P\)</span>, the lower output (income <span class="math inline">\(Y^{r}\)</span>).</p></li>
+</ul>
+</div>
+<div id="aggregate-demand-5" class="slide section level2">
+<h1>Aggregate Demand</h1>
+<p><img src="gt.png" /></p>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

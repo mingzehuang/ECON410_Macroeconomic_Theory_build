@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Mingze Huang" />
+  <meta name="date" content="2021-08-05" />
+  <title>Lecture 4: Goods Market and Financial Market</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="site_libs/slidy-2/scripts/slidy.js"></script>
+  <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Lecture 4: Goods Market and Financial Market</h1>
+  <p class="author">
+Mingze Huang
+  </p>
+  <p class="date">2021-08-05</p>
+</div>
+<div id="the-composition-of-gdp-y" class="slide section level2">
+<h1>The Composition of GDP (Y)</h1>
+<p><a href="https://www.bls.gov/emp/tables/real-gdp-major-demand-category.htm">GDP Decomposition by BLS</a></p>
+<ul>
+<li><p>Consumption (C): goods and services purchased by consumers.</p></li>
+<li><p>Investment (I):</p>
+<ul>
+<li><p>Fixed Investment:</p>
+<ul>
+<li><p>Non-residential Investment: the purchase by firms of new plants or new machines.</p></li>
+<li><p>Residential Investment: the purchase by people of new houses or apartments.</p></li>
+</ul></li>
+<li><p>Inventory Investment = Production - Sale</p></li>
+</ul></li>
+<li><p>Net Exports (Trade Balance) = Exports (X) - Imports (IM): exports exceed imports is said to run a <strong>trade surplus</strong>; exports less than imports is said to run a <a href="https://www.bea.gov/news/2021/us-international-trade-goods-and-services-may-2021"><strong>trade deficit</strong></a>.</p>
+<ul>
+<li><p>Exports: the purchases of domestic goods and services by foreigners.</p></li>
+<li><p>Imports: the purchases of foreign goods and services by domestic consumers, domestic firms and government.</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="demand-income-side" class="slide section level2">
+<h1>Demand (Income Side)</h1>
+<ul>
+<li><p>Government Spending (G): good and services (government employees) by federal and local governments.</p>
+<ul>
+<li><p>Government spending includes government expenditures consumption and government investment.</p></li>
+<li><p>Government spending do NOT include government transfer payments (unemployment benefits and pensions, e.g.) or interest payments on government debt.</p></li>
+</ul></li>
+</ul>
+<p>Demand (income side) always comes from consumption (C), investment (I), government spending (G) and net exports (X - IM).</p>
+<ul>
+<li>Recall wage and profit in the example of GDP aggregation (income side).</li>
+</ul>
+<p>The main factor determines consumption (C) is disposable income (<span class="math inline">\(Y_{D}\)</span>), the income remains after consumers have received transfers from government and paid taxes.</p>
+<ul>
+<li><p><span class="math inline">\(C=c_{0}+c_{1}\cdot Y_{D}\)</span>:</p>
+<ul>
+<li><p><span class="math inline">\(c_{0}\)</span> is autonomous consumption (independent of disposable income).</p></li>
+<li><p><span class="math inline">\(c_{1}\)</span> is marginal propensity to consume. Assume consumers consume more if they earn more, apparently <span class="math inline">\(c_{1}\)</span> should be positive.</p></li>
+<li><p><span class="math inline">\(c_{1}\cdot Y_{D}\)</span> is called induced consumption.</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="demand-income-side-1" class="slide section level2">
+<h1>Demand (Income Side)</h1>
+<p><img src="disposable.png" /></p>
+<p>Net Taxes (<span class="math inline">\(T\)</span>): taxes minus government transfer payments. <a href="https://www.irs.gov/coronavirus-tax-relief-and-economic-impact-payments">Advanced Child Tax Credit and Stimulus Check</a></p>
+<p>Disposable income equals to total income (GDP) deduct net taxes: <span class="math inline">\(Y_{D}\equiv Y-T\)</span>.</p>
+<p>Therefore, <span class="math inline">\(C=c_{0}+c_{1}(Y-T)\)</span>. <a href="https://libertystreeteconomics.newyorkfed.org/2021/04/an-update-on-how-households-are-using-stimulus-checks/">Stimulus Check and Consumption</a></p>
+<ul>
+<li>Higher income <span class="math inline">\(Y\)</span>, higher consumption <span class="math inline">\(C\)</span>; Higher net taxes <span class="math inline">\(T\)</span>, lower consumption <span class="math inline">\(C\)</span>.</li>
+</ul>
+</div>
+<div id="equilibrium" class="slide section level2">
+<h1>Equilibrium</h1>
+<p>Here the model assume investment is given (exogenous) <span class="math inline">\(I=\overline{I}\)</span>.</p>
+<p>Government choose government spending <span class="math inline">\(G\)</span> and net taxes <span class="math inline">\(T\)</span> by <strong>fiscal policy</strong>.</p>
+<p>Note that GDP (<span class="math inline">\(Y\)</span>) also represents production.</p>
+<p>Here we’re discussing goods market equilibrium, which is the balance between <strong>quantity</strong> of supply and <strong>quantity</strong> of demand. Obviously the GDP here is real GDP: <span class="math inline">\(Y=Y^{r}\)</span>; <span class="math inline">\(Y_{D}=Y_{D}^{r}\)</span>.</p>
+<p>Since production side equal to income side in equilibrium, if we assume zero trade balance (<span class="math inline">\(X - IM = 0\)</span>), then<span class="math inline">\(Y^{r} = C+\overline{I}+G\)</span> or <span class="math inline">\(Y^{r} = c_{0}+c_{1}(Y^{r}-T)+\overline{I}+G\)</span>.</p>
+<ul>
+<li>In equilibrium, production, <span class="math inline">\(Y^{r}\)</span> (the left side of the equation), is equal to demand (the right side). Demand in turn depends on income, <span class="math inline">\(Y^{r}\)</span>, which is itself equal to production. <strong>GDP represents both production and income. Production and income are always equal!</strong></li>
+</ul>
+</div>
+<div id="investment-equal-to-saving" class="slide section level2">
+<h1>Investment equal to Saving</h1>
+<p>Alternatively, we can look at saving.</p>
+<ul>
+<li><p>Private saving (S): saving by consumers, is equal to disposable income minus consumption: <span class="math inline">\(S=Y_{D}^{r}-C\)</span> or <span class="math inline">\(S=(Y^{r}-T)-C\)</span>.</p></li>
+<li><p>Public saving: saving by government is equal to net taxes minus government spending: <span class="math inline">\(T-G\)</span>. Taxes exceeds government spending (public saving is positive), is said to run a budget surplus; taxes less than government spending (public saving is negative), is said to run a budget deficit. <a href="https://www.cbo.gov/topics/budget">Federal budget deficit by CBO</a></p></li>
+</ul>
+<p>Assume zero trade balance, <span class="math inline">\(Y^{r} = C+\overline{I}+G\)</span>.</p>
+<p>Rearrange the equation: <span class="math inline">\((Y^{r}-T)-C+(T-G)=\overline{I}\)</span>.</p>
+<ul>
+<li><p>Private saving <span class="math inline">\((Y^{r}-T)-C\)</span> plus public saving <span class="math inline">\(T-G\)</span> equal to investment.</p></li>
+<li><p>In equilibrium, investment always equal to saving: <span class="math inline">\(\overline{I}=S+(T-G)\)</span>. This is so called <strong>IS relation</strong>.</p></li>
+</ul>
+<p>In summary, the equilibrium condition for goods market:</p>
+<ul>
+<li><p>Production == demand</p></li>
+<li><p>investment == saving</p></li>
+</ul>
+</div>
+<div id="the-demand-for-money" class="slide section level2">
+<h1>The demand for money</h1>
+<p>This model assume you only have choice between two assets, money and bonds:</p>
+<p>Money, which you can use for transactions, pays no interest. In the real world, there are two types of money: <strong>currency</strong>, and deposit accounts.</p>
+<p>Bonds pay a positive interest rate, <span class="math inline">\(i\)</span>, but they cannot be used for transactions. In the real world, there are many types of bonds, each associated with a specific interest rate. <a href="https://www.treasurydirect.gov/indiv/products/prod_tbonds_glance.htm">US Treasury Bond</a></p>
+<p>Note that the main reason to assume these two assets is to characterize the trade-off between interest and liquidity. There are different financial assets with liquidity and interest between those two cases.</p>
+<p>You should hold both money and bonds. The proportion depend on two variables:</p>
+<ul>
+<li><p>Level of transactions: You need enough money on hand to avoid selling bonds too often.</p></li>
+<li><p>Interest rate on bond: You would like to earn interest as much as possible.</p></li>
+</ul>
+</div>
+<div id="some-terms-closely-related-by-not-money" class="slide section level2">
+<h1>Some terms closely related by NOT money</h1>
+<p>Income, saving, financial wealth and investment:</p>
+<ul>
+<li><p>Income is what you earn from working plus what you receive in interest and dividends. It is a flow (during a given period).</p></li>
+<li><p>Saving is the part of after-tax income that you don’t spend. It is also a flow (during a given period).</p></li>
+<li><p>Financial wealth is the value of all your financial assets minus all your financial liabilities. It is a stock variable (accumulation up to a given moment)</p></li>
+<li><p>Investment is the purchase of new capital goods (machine, office building, et.al).</p></li>
+<li><p>Financial investment is <strong>NOT</strong> the investment we’re talking in economics. In many cases, it’s actually saving in economics.</p></li>
+</ul>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

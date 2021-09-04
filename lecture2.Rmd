@@ -1,0 +1,142 @@
+---
+title: 'Lecture 2: Introduction (continued)'
+author: "Mingze Huang"
+date: "`r Sys.Date()`"
+output: slidy_presentation
+---
+
+## Inflation (Measured by Inflation Rate)
+
+Inflation is a sustained rise in the general level of prices-the price level. The inflation rate is the rate at which the price level increases. Symmetrically, deflation is a sustained decline in the price level. It corresponds to a negative inflation rate.
+
+The GDP deflator gives the average price of output-the final goods produced in the economy-but consumers care about the average price of consumption-the goods they consume.
+
+  - Some of the goods in GDP are sold not to consumers but to firms ([factory buildings](https://www.thebalance.com/how-does-real-estate-affect-the-u-s-economy-3306018), machine tools, et.al), to government or to foreigners.
+  
+  - Some of the goods bought by consumers are not produced domestically but are imported from abroad.
+  
+To measure the average price of consumption or the cost of living, we use Consumer Price Index (CPI) or Personal consumption expenditure (PCE) price index. [Definition by Bureau of Labor Statistics and Bureau of Economic Analysis](https://www.bls.gov/opub/mlr/2016/article/comparing-the-cpi-with-the-gdp-price-index-and-gdp-implicit-price-deflator.htm#_edn12)
+
+## Inflation (Measured by Inflation Rate)
+
+  - CPI measures price changes in goods and services purchased out of pocket by urban consumers.
+  
+  - CPI has 2 primary inputs: prices and expenditure weights (market basket).
+  
+  - BLS Commodities and Services (C&S) survey collects price data on approximately 80000 goods and services per month in roughly 23000 retail establishments in 87 urban areas around U.S.. The Housing Survey  collects approximately 6000 rent quotes per month in the same areas.
+  
+  - The Consumer Expenditure (CE) survey data collected by U.S. Census of Bureau for BLS. CE survey identifies the dollar amount households spend on a broad range of goods and services. Then it's easy to derive the weight for each category by dollar amount and price.
+  
+  - Take market basket in base year as benchmark (constant).
+  
+  - The CPI for a given year, $CPI_{t}$, is the ratio of cost of (base year) market basket in given year to cost of (base year) market basket in base year.
+
+Note that to capture real GDP due to production, we use constant price as weights to eliminate the change in price. Now to capture the price level, we use constant expenditure weights (market basket) to eliminate the change in quantity.
+
+Recall that we have GDP deflator in base year is $1$ or $100\%$ by construction. Similarly, we would like to make CPI as $100$ in base year for convenience (traditionally for index we denote $100$ instead of $1$).
+
+## Inflation (Measured by Inflation Rate)
+
+Example: 
+
+```{r, echo = FALSE, results = 'asis'}
+table1 = data.frame(matrix(c(2020, 2021, 0.035, 0.013, 20, 30, 0.2, 0.2, 1.5, 3), 2, 5)); colnames(table1) = c("Year", "Weight (Cars)", "Price (cars)", "Weight (Gas)", "Price (Gas)")
+knitr::kable(table1, caption = "Illustrate CPI calculation")
+```  
+  
+Take 2020 as base year, assume a representative (average) consumer spend 70% of money on cars, 30% of money on gasoline. By construction we have Cost of (base year) market basket for base year is:
+
+$$
+C_{2020}=P_{2020}^{C}W_{2020}^{C}+P_{2020}^{G}W_{2020}^{G}=20\times0.035+1.5\times0.2=1
+$$
+
+Hold market basket unchanged, the cost of (base year) market basket for given year 2021 is:
+
+$$
+C_{2021}=P_{2021}^{C}W_{2020}^{C}+P_{2021}^{G}W_{2020}^{G}=30\times0.035+3\times0.2=1.65
+$$
+
+By definition, CPI in 2020 (base year) is: $CPI_{2020}=\frac{C_{2020}}{C_{2020}}\times100=100$
+
+CPI for 2021 (given year) is: $CPI_{2021}=\frac{C_{2021}}{C_{2020}}\times100=\frac{1.65}{1}\times100=165$
+
+If you spend $\$1000$ per month in 2020, you probably have to spend $\$1000\times\frac{165}{100}=\$1650$ in 2021 to maintain your living standard!
+
+## Inflation (Measured by Inflation Rate)
+
+CPI inflation is the growth rate of CPI:
+
+$$
+\pi_{2021}=\frac{CPI_{2021}-CPI_{2020}}{CPI_{2020}}\times100\%=65\%
+$$
+Note that: **CPI inflation is the growth rate of CPI, but GDP deflator inflation is NOT the growth rate of GDP deflator!**
+
+  - In U.S. Bureau of Labor Statistics, GDP deflator is formally named as **GDP implicit price deflator**.
+  
+  - U.S. Bureau of Labor Statistics has another index called **GDP price index**, which has similar structure as **CPI**, but covers all goods and services covered by GDP.
+  
+  - U.S. Bureau of Economic Analysis construct **Personal Consumption Expenditure** (PCE) price index, which is similar to **CPI**, measures consumer related goods and services as well. [PCE](https://www.bea.gov/news/2021/personal-income-and-outlays-may-2021) [Difference](https://www.clevelandfed.org/newsroom-and-events/publications/economic-trends/2014-economic-trends/et-20140417-pce-and-cpi-inflation-whats-the-difference.aspx)
+
+Question: Are housing prices included in CPI? [Rental cost vs. Housing Price](https://www.marketwatch.com/story/an-inflation-storm-is-coming-for-the-u-s-housing-market-11623419869)
+
+Question: Are food and energy prices included in CPI and PCE? How about core CPI and PCE?
+
+## Chain rule in nominal GDP and real GDP
+
+Example:
+
+```{r, echo = FALSE, results = 'asis'}
+table1 = data.frame(matrix(c(2019, 2020, 2021, 20, 10, 20, 25, 20, 30, 20, 10, 20, 2, 1.5, 3), 3, 5)); colnames(table1) = c("Year", "Quantity (Cars)", "Price (cars)", "Quantity (Gas)", "Price (Gas)")
+knitr::kable(table1, caption = "Illustrate chain rule in nominal GDP and real GDP")
+```
+
+Nominal GDP:
+$$
+Y_{2019}^{n}=P_{2019}^{C}Q_{2019}^{C}+P_{2019}^{G}Q_{2019}^{G}=25\times20+2\times20=540\\
+Y_{2020}^{n}=P_{2020}^{C}Q_{2020}^{C}+P_{2020}^{G}Q_{2020}^{G}=20\times10+1.5\times10=215\\
+Y_{2021}^{n}=P_{2021}^{C}Q_{2021}^{C}+P_{2021}^{G}Q_{2021}^{G}=30\times20+3\times20=660
+$$
+
+Real GDP (2020 as base year):
+$$
+Y_{2019}^{r}=P_{2020}^{C}Q_{2019}^{C}+P_{2020}^{G}Q_{2019}^{G}=20\times20+1.5\times20=430\\
+Y_{2020}^{r}=Y_{2020}^{r}=215\\
+Y_{2021}^{r}=P_{2020}^{C}Q_{2021}^{C}+P_{2020}^{G}Q_{2021}^{G}=20\times20+1.5\times20=430
+$$
+
+## Chain rule in nominal GDP and real GDP
+
+Real GDP in 2021 just rebounds to the level in 2019! Real GDP growth in 2020 is $\frac{215-430}{430}=-50\%$; whereas real GDP growth in 2021 is $\frac{430-215}{215}=100\%$.
+
+Since 2020 is base year, GDP deflator is $P_{2020}=\frac{Y_{2020}^{n}}{Y_{2020}^{r}}=1$.
+
+The GDP deflator for 2019 is $P_{2019}=\frac{Y_{2019}^{n}}{Y_{2019}^{r}}=\frac{540}{430}=125.58\%$.
+
+The GDP deflator for 2021 is $P_{2021}=\frac{Y_{2021}^{n}}{Y_{2021}^{r}}=\frac{660}{430}=153.49\%$.
+
+The GDP deflator inflation for 2021 is $\frac{Y_{2021}^{n}-Y_{2020}^{n}}{Y_{2020}^{n}}-\frac{Y_{2021}^{r}-Y_{2020}^{r}}{Y_{2020}^{r}}=\frac{660-215}{215}-\frac{430-215}{215}=206.98\%-1=106.98\%$
+
+If we use 2019 as base year, then real GDP would be:
+
+$$
+Y_{2019}^{r}=Y_{2019}^{r}=540\\
+Y_{2020}^{r}=P_{2019}^{C}Q_{2020}^{C}+P_{2019}^{G}Q_{2020}^{G}=25\times10+2\times10=270\\
+Y_{2021}^{r}=P_{2019}^{C}Q_{2021}^{C}+P_{2019}^{G}Q_{2021}^{G}=25\times20+2\times20=540
+$$
+Real GDP growth in 2020 is $\frac{270-540}{540}=-50\%$; whereas real GDP growth in 2021 is $\frac{540-270}{270}=100\%$.
+
+## Chain rule in nominal GDP and real GDP
+
+Since 2019 is base year, GDP deflator is $P_{2019}=\frac{Y_{2019}^{n}}{Y_{2019}^{r}}=1$.
+
+The GDP deflator for 2020 is $P_{2020}=\frac{Y_{2020}^{n}}{Y_{2020}^{r}}=\frac{215}{270}=79.63\%$.
+
+The GDP deflator for 2021 is $P_{2021}=\frac{Y_{2021}^{n}}{Y_{2021}^{r}}=\frac{660}{540}=122.22\%$.
+
+The GDP deflator inflation for 2020 is $\frac{Y_{2020}^{n}-Y_{2019}^{n}}{Y_{2019}^{n}}-\frac{Y_{2020}^{r}-Y_{2019}^{r}}{Y_{2019}^{r}}=\frac{215-540}{540}-\frac{270-540}{540}=-60.19\%-(-50\%)=-10.19\%$
+
+The GDP deflator inflation for 2021 is $\frac{Y_{2021}^{n}-Y_{2020}^{n}}{Y_{2020}^{n}}-\frac{Y_{2021}^{r}-Y_{2020}^{r}}{Y_{2020}^{r}}=\frac{660-215}{215}-\frac{540-270}{270}=206.98\%-100\%=106.98\%$
+
+Base year matters!
+
+

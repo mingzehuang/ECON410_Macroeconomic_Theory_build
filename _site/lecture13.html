@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Mingze Huang" />
+  <meta name="date" content="2021-08-05" />
+  <title>Lecture 13: AS-AD Model</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="site_libs/slidy-2/scripts/slidy.js"></script>
+  <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Lecture 13: AS-AD Model</h1>
+  <p class="author">
+Mingze Huang
+  </p>
+  <p class="date">2021-08-05</p>
+</div>
+<div id="aggregate-supply-curve" class="slide section level2">
+<h1>Aggregate Supply Curve</h1>
+<p>Recall the Aggregate Supply (AS) curve we derived:<span class="math inline">\(P\equiv P^{e}(1+\mu)F(1-\frac{Y^{r}}{L},z)\)</span></p>
+<ul>
+<li><p>Now expected price level (<span class="math inline">\(P^{e}\)</span>) is given by workers’ expectation; mark-up (<span class="math inline">\(\mu\)</span>) is given by goods market competition; labor force (<span class="math inline">\(L\)</span>) is given by work-leisure trade-off of labor participants; <span class="math inline">\(z\)</span> is given catchall variable. All of them are exogenous variables (given outside of the model).</p></li>
+<li><p>Only two variables are endogenous (determined inside the model): current price (<span class="math inline">\(P\)</span>) and output (<span class="math inline">\(Y^{r}\)</span>).</p></li>
+</ul>
+<p>Question 1: How does AS curve shift if mark-up (<span class="math inline">\(\mu\)</span>) increases?</p>
+<p>Question 2: How does AS curve shift if catchall variable (<span class="math inline">\(z\)</span>) increases?</p>
+<p><img src="ASshift.png" /></p>
+</div>
+<div id="aggregate-demand-curve" class="slide section level2">
+<h1>Aggregate Demand Curve</h1>
+<p>Recall the Aggregate Demand (AD) curve we derived: <span class="math inline">\(\frac{M}{P}=Y^{r}\cdot L(I^{-1}((1 - c_{1})Y^{r}+c_{1}T-c_{0}-G))\)</span></p>
+<ul>
+<li><p>Now nominal money supply (<span class="math inline">\(M\)</span>) is given by central bank; autonomous consumption (<span class="math inline">\(c_{0}\)</span>) and marginal propensity to consume (<span class="math inline">\(c_{1}\)</span>) is given by consumers’ preference; net taxes (<span class="math inline">\(T\)</span>) and government spending (<span class="math inline">\(G\)</span>) are given by government. Functions <span class="math inline">\(L(\cdot)\)</span> and <span class="math inline">\(I^{-1}(\cdot)\)</span> are given as well.</p></li>
+<li><p>Only two variables are endogenous (determined inside the model): current price (<span class="math inline">\(P\)</span>) and output (<span class="math inline">\(Y^{r}\)</span>).</p></li>
+</ul>
+<p><img src="ADshift.png" /></p>
+</div>
+<div id="aggregate-demand-curve-1" class="slide section level2">
+<h1>Aggregate Demand Curve</h1>
+<p>Recall our IS-LM model: <span class="math display">\[
+\begin{cases}
+(1 - c_{1})Y^{r} = c_{0}-c_{1}T+I(i)+G &amp; \text{IS relation}\\
+\frac{M}{P}=Y^{r}\cdot L(i) &amp; \text{LM relation}\
+\end{cases}
+\]</span> <img src="taxislm.png" /></p>
+<ul>
+<li>Assume price (<span class="math inline">\(P\)</span>) unchanged, the increase of net taxes (<span class="math inline">\(T\)</span>) leads to decrease in output (<span class="math inline">\(Y^{r}\)</span>) and interest rate (<span class="math inline">\(i\)</span>).</li>
+</ul>
+</div>
+<div id="aggregate-demand-curve-2" class="slide section level2">
+<h1>Aggregate Demand Curve</h1>
+<ul>
+<li>Since Aggregate Demand (AD) curve comes from IS-LM model, for any price level (<span class="math inline">\(P\)</span>), the increase of net taxes (<span class="math inline">\(T\)</span>) leads to decrease in output (<span class="math inline">\(Y^{r}\)</span>).</li>
+</ul>
+<p>Question 1: How does AD curve shift if net taxes (<span class="math inline">\(T\)</span>) increases?</p>
+<p>Question 2: How does AD curve shift if net taxes (<span class="math inline">\(T\)</span>) decreases?</p>
+<p><img src="ADshift2.png" /></p>
+</div>
+<div id="aggregate-demand-curve-3" class="slide section level2">
+<h1>Aggregate Demand Curve</h1>
+<p>In your midterm project, you’ve seen that by IS-LM model</p>
+<ul>
+<li><p>Assume price (<span class="math inline">\(P\)</span>) unchanged, the increase of government spending (<span class="math inline">\(G\)</span>) leads to increase in output (<span class="math inline">\(Y^{r}\)</span>) and interest rate (<span class="math inline">\(i\)</span>).</p></li>
+<li><p>Since Aggregate Demand (AD) curve comes from IS-LM model, for any price level (<span class="math inline">\(P\)</span>), the increase of net taxes (<span class="math inline">\(G\)</span>) leads to increase in output (<span class="math inline">\(Y^{r}\)</span>).</p></li>
+</ul>
+<p><img src="ADshift3.png" /></p>
+</div>
+<div id="aggregate-demand-curve-4" class="slide section level2">
+<h1>Aggregate Demand Curve</h1>
+<p><img src="monetaryislm.png" /></p>
+<ul>
+<li><p>Assume price (<span class="math inline">\(P\)</span>) unchanged, the increase of nominal money supply (<span class="math inline">\(M\)</span>) leads to increase in output (<span class="math inline">\(Y^{r}\)</span>) and decrease in interest rate (<span class="math inline">\(i\)</span>).</p></li>
+<li><p>Since Aggregate Demand (AD) curve comes from IS-LM model, for any price level (<span class="math inline">\(P\)</span>), the increase of nominal money supply (<span class="math inline">\(M\)</span>) leads to increase in output (<span class="math inline">\(Y^{r}\)</span>).</p></li>
+</ul>
+</div>
+<div id="aggregate-demand-curve-5" class="slide section level2">
+<h1>Aggregate Demand Curve</h1>
+<p>Question 1: How does AD curve shift if nominal money supply (<span class="math inline">\(M\)</span>) increases?</p>
+<p>Question 2: How does AD curve shift if nominal money supply (<span class="math inline">\(M\)</span>) decreases?</p>
+<p><img src="ADshift4.png" /></p>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Projects</title>
+
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">ECON410: Macroeconomic Theory</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Syllabus</a>
+</li>
+<li>
+  <a href="notes.html">Lecture Notes</a>
+</li>
+<li>
+  <a href="homework.html">Homework</a>
+</li>
+<li>
+  <a href="projects.html">Projects</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Projects</h1>
+
+</div>
+
+
+<div id="section" class="section level2 tabset">
+<h2 class="tabset"></h2>
+<div id="midterm-project" class="section level3">
+<h3>Midterm Project</h3>
+<ul>
+<li><p>Please take a look at the proposed infrastructure plan on <a href="https://www.whitehouse.gov/briefing-room/statements-releases/2021/06/24/fact-sheet-president-biden-announces-support-for-the-bipartisan-infrastructure-framework/">The White House</a>. Most of items fall into the category of “Government consumption expenditures and gross investment” defined by <a href="https://www.bls.gov/emp/tables/real-gdp-major-demand-category.htm">Bureau of Labor Statistics</a></p></li>
+<li><p>Take a review on the analysis of fiscal policy by IS-LM model in lecture 6.</p></li>
+<li><p>Please do the following work as your midterm project:</p>
+<ul>
+<li><p>Rearrange the equation of IS relation and discuss how the IS curve will shift on the graph (Please draw the graph as well)</p></li>
+<li><p>Put the LM curve on, discuss the shift of equilibrium (output and interest rate)</p></li>
+<li><p>Explain the intuition of the effect of massive government spending(<span class="math inline">\(G\)</span>)</p>
+<ul>
+<li><p>Starting from the direct effect on the goods market</p></li>
+<li><p>Then go to indirect effect on financial market (money market)</p></li>
+</ul></li>
+<li><p>To fund the massive government spending plan, the Administration propose tax hike as well. Discuss the possible effect of it (<span class="math inline">\(T\)</span>). You may take a look at the discussion on <a href="https://taxfoundation.org/biden-budget-proposals/">Tax Foundation</a></p></li>
+</ul></li>
+</ul>
+<p><strong>Minimum Requirement</strong>: go to <em>google slides</em>, get add-on “MathType” (you need it to edit equation), choose a theme you like. then you can do your project following the listed steps.</p>
+<p>At least 4 slides:</p>
+<ul>
+<li><p>One for rearranged equation; explanation and draw a graph to show the shift of IS curve.</p></li>
+<li><p>One for IS-LM graph to show the shift of equilibrium and explanation.</p></li>
+<li><p>One for intuition of two markets adjustments.</p></li>
+<li><p>One for general discussion about the effect of possible tax hike.</p></li>
+</ul>
+<p>When you finish it, click “share” then choose available for view or edit by link inside Texas A&amp;M university. Copy the link and paste into Canvas Midterm project then submit it.</p>
+</div>
+<div id="final-project" class="section level3">
+<h3>Final Project</h3>
+<p>In Midterm Project, we analyze proposed infrastructure plan by IS-LM (short run) model. Now we extend our analysis to medium run by AS-AD model.</p>
+<ul>
+<li><p>Take a review on the analysis of fiscal policy by AS-AD model in lecture 15.</p></li>
+<li><p>Please do the following work in <em>google slides</em> as your midterm project:</p>
+<ul>
+<li><p>First slide will be Title “ECON410: Final Project” and subtitle your name.</p></li>
+<li><p>Copy the graph <a href="no_bill.png">No Bill</a> as second slide. Assume COVID-19 recession makes Aggregate demand curve on the left of labor market equilibrium. If No new government spending bill passed, the economy will change in a way like the graph shows. In the third slide, please explain what’s happening in this case according to the graph.</p></li>
+<li><p>Copy the graph <a href="small_bill.png">Small Bill</a> as fourth slide. If a small government spending bill passed, the economy will change in a way like the graph shows. In the fifth slide, please explain what’s happening in this case according to the graph.</p></li>
+<li><p>Copy the graph <a href="large_bill.png">Large Bill</a> as sixth slide. If a large government spending bill passed, the economy will change in a way like the graph shows. In the seventh slide, please explain what’s happening in this case according to the graph.</p></li>
+<li><p>Note that it’s an “infrastructure” bill rather than a general government spending bill. If the bill really focuses on “infrastructure” (investment), what’s the effect on the economy in long run? Please put some general discussion on your last slide.</p></li>
+</ul></li>
+</ul>
+<p>When you finish it, click “share” then choose available for view or edit by link inside Texas A&amp;M university. Copy the link and paste into Canvas final project then submit it.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

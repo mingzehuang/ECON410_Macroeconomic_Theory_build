@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Homework</title>
+
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">ECON410: Macroeconomic Theory</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Syllabus</a>
+</li>
+<li>
+  <a href="notes.html">Lecture Notes</a>
+</li>
+<li>
+  <a href="homework.html">Homework</a>
+</li>
+<li>
+  <a href="projects.html">Projects</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Homework</h1>
+
+</div>
+
+
+<div id="section" class="section level2 tabset">
+<h2 class="tabset"></h2>
+<div id="homework-1" class="section level3">
+<h3>Homework 1</h3>
+<ul>
+<li><p>Click the link below, then select the tab “FRED”. You can see 5 sub-tabs. Get through the contents under the tab “Data” and “Graphs”, this will help you get familiar with the basic functionality of FRED tools.</p>
+<ul>
+<li><a href="https://fredhelp.stlouisfed.org/#fred-data-how-can-i-find-data-on-fred">Link to FRED Tutoring</a></li>
+</ul></li>
+<li><p>Register an account on FRED (free), go to “My Account” -&gt; “Dashboards”, create a new dashboard called “ECON410_HW1_yourfirstname_yourlastname”. Replicate the following 2 graphs (You’ve already know how to find data and make graph by tutorials). Put the graphs you made into the dashboad, make it public, then submit the link url on Canvas HW1.</p>
+<ul>
+<li><p><a href="Job_monthly_seasonal_adjusted%20(Jan%202000~).png">Job_monthly_seasonal_adjusted (Jan 2000~)</a></p></li>
+<li><p><a href="Inflation_monthly_seasonal_adjusted%20(Jan%202000~).png">Inflation_monthly_seasonal_adjusted (Jan 2000~)</a></p></li>
+</ul></li>
+</ul>
+</div>
+<div id="homework-2" class="section level3">
+<h3>Homework 2</h3>
+<ul>
+<li><p>Click the link below to log into Linkedin Learning through the credential provided by our university. It’s free for TAMU students and faculty (Make sure you log in by this way, otherwise you will be charged as outside user). If you’re off-campus and have some difficulty to log in, you probably need <a href="https://it.tamu.edu/services/network-and-internet-access/virtual-private-networks/virtual-private-network-vpn/">VPN</a> provided by our IT division via Cisco Anyconnect.</p>
+<ul>
+<li><a href="https://linkedinlearning.tamu.edu/">Linkedin Learning TAMU</a></li>
+</ul></li>
+<li><p>After you log into Linkedin Learning via TAMU account, click the link below and get through the course. You don’t have to understand every detail but you will get some idea about the usage of Macroeconomic data in financial market practice. Once you finish the course, please download the <strong>Linkedin Learning certificate</strong> and upload it on Canvas HW2. You can share the certificate onto your linkedin account if you like. You can take the exam at the end of the course and get the National Association of State Boards of Accountancy (NASBA) certificate if you like, but it’s optional, Not required.</p>
+<ul>
+<li><a href="https://www.linkedin.com/learning/algorithmic-trading-and-stocks-essential-training/welcome?u=74650722">Algorithmic Trading and Stock Essential Training</a>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="homework-3" class="section level3">
+<h3>Homework 3</h3>
+<p>HW3 has roughly same structure as HW1. Please go to your FRED account, create a new dashboard called called “ECON410_HW3_yourfirstname_yourlastname”.</p>
+<ul>
+<li><p>In homework 1 graph 2, we haven’t finished the inflation calculation since we just calculated the difference between current CPI and CPI one-year-ago (the numerator of CPI). The inflation should be <strong>percentage change from one-year-ago</strong>. So this time please use the same data series “Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCSL)” but choose the “units” as “percent change from year ago”.</p></li>
+<li><p>Add another data series “Average Hourly Earnings of All Employees, Total Private (CES0500000003)”, choose units “percent change from year ago”.</p></li>
+<li><p>So that we have one graph with 2 lines (data series), both series start from January 2008 to most recent release.</p></li>
+</ul>
+<p>Please submit the URL on Canvas HW3 as last time.</p>
+</div>
+<div id="homework-4" class="section level3">
+<h3>Homework 4</h3>
+<p>HW4 has roughly same structure as HW1 and HW3. Please go to your FRED account, create a new dashboard called called “ECON410_HW4_yourfirstname_yourlastname”.</p>
+<ul>
+<li>Replicate the Figure 1 in <a href="https://www.stlouisfed.org/open-vault/2020/january/what-is-phillips-curve-why-flattened">What Is the Phillips Curve (and Why Has It Flattened)?</a>, but extend to most recent release.</li>
+</ul>
+</div>
+<div id="bonus-homework" class="section level3">
+<h3>Bonus Homework</h3>
+<p>This is a bonus homework <strong>(not required)</strong>. If you finish this homework, you will get 6 points on top of your total semester grades. If you works hard but still several points away from <em>A</em> or <em>B</em>, this homework may help.</p>
+<ul>
+<li><p>This homework is similar to HW2. Click the link below to log into Linkedin Learning through the credential provided by our university.</p>
+<ul>
+<li><a href="https://linkedinlearning.tamu.edu/">Linkedin Learning TAMU</a></li>
+</ul></li>
+<li><p>After you log into Linkedin Learning via TAMU account, click the link below and get through the course. Once you finish the course, please download the <strong>Linkedin Learning certificate</strong> and upload it on Canvas bonus homework. You can share the certificate onto your linkedin account if you like.</p>
+<ul>
+<li><a href="https://www.linkedin.com/learning/learning-public-data-sets-2/use-public-data-sets-to-perform-analyses?u=74650722">Learning Public Data Sets</a>.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

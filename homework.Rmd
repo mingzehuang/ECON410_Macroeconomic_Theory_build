@@ -1,0 +1,62 @@
+---
+title: "Homework"
+---
+
+## {.tabset}
+
+### Homework 1
+
+- Click the link below, then select the tab "FRED". You can see 5 sub-tabs. Get through the contents under the tab "Data" and "Graphs", this will help you get familiar with the basic functionality of FRED tools.
+
+    - [Link to FRED Tutoring](https://fredhelp.stlouisfed.org/#fred-data-how-can-i-find-data-on-fred)
+    
+- Register an account on FRED (free), go to "My Account" -> "Dashboards", create a new dashboard called "ECON410_HW1_yourfirstname_yourlastname". Replicate the following 2 graphs (You've already know how to find data and make graph by tutorials). Put the graphs you made into the dashboad, make it public, then submit the link url on Canvas HW1.
+
+   - [Job_monthly_seasonal_adjusted (Jan 2000~)](Job_monthly_seasonal_adjusted (Jan 2000~).png)
+   
+   - [Inflation_monthly_seasonal_adjusted (Jan 2000~)](Inflation_monthly_seasonal_adjusted (Jan 2000~).png)
+
+### Homework 2
+
+- Click the link below to log into Linkedin Learning through the credential provided by our university. It's free for TAMU students and faculty (Make sure you log in by this way, otherwise you will be charged as outside user). If you're off-campus and have some difficulty to log in, you probably need [VPN](https://it.tamu.edu/services/network-and-internet-access/virtual-private-networks/virtual-private-network-vpn/) provided by our IT division via Cisco Anyconnect.
+
+  - [Linkedin Learning TAMU](https://linkedinlearning.tamu.edu/)
+  
+- After you log into Linkedin Learning via TAMU account, click the link below and get through the course. You don't have to understand every detail but you will get some idea about the usage of Macroeconomic data in financial market practice. Once you finish the course, please download the **Linkedin Learning certificate** and upload it on Canvas HW2. You can share the certificate onto your linkedin account if you like. You can take the exam at the end of the course and get the National Association of State Boards of Accountancy (NASBA) certificate if you like, but it's optional, Not required.
+
+  - [Algorithmic Trading and Stock Essential Training](https://www.linkedin.com/learning/algorithmic-trading-and-stocks-essential-training/welcome?u=74650722).
+
+  
+  
+  
+
+
+### Homework 3
+
+HW3 has roughly same structure as HW1. Please go to your FRED account, create a new dashboard called called "ECON410_HW3_yourfirstname_yourlastname".
+
+  - In homework 1 graph 2, we haven't finished the inflation calculation since we just calculated the difference between current CPI and CPI one-year-ago (the numerator of CPI). The inflation should be **percentage change from one-year-ago**. So this time please use the same data series "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCSL)" but choose the "units" as "percent change from year ago".
+  
+  - Add another data series "Average Hourly Earnings of All Employees, Total Private (CES0500000003)", choose units "percent change from year ago".
+  
+  - So that we have one graph with 2 lines (data series), both series start from January 2008 to most recent release.
+  
+Please submit the URL on Canvas HW3 as last time.
+
+### Homework 4
+
+HW4 has roughly same structure as HW1 and HW3. Please go to your FRED account, create a new dashboard called called "ECON410_HW4_yourfirstname_yourlastname".
+
+  - Replicate the Figure 1 in [What Is the Phillips Curve (and Why Has It Flattened)?](https://www.stlouisfed.org/open-vault/2020/january/what-is-phillips-curve-why-flattened), but extend to most recent release.
+
+### Bonus Homework
+
+This is a bonus homework **(not required)**. If you finish this homework, you will get 6 points on top of your total semester grades. If you works hard but still several points away from *A* or *B*, this homework may help.
+
+- This homework is similar to HW2. Click the link below to log into Linkedin Learning through the credential provided by our university.
+
+  - [Linkedin Learning TAMU](https://linkedinlearning.tamu.edu/)
+  
+- After you log into Linkedin Learning via TAMU account, click the link below and get through the course. Once you finish the course, please download the **Linkedin Learning certificate** and upload it on Canvas bonus homework. You can share the certificate onto your linkedin account if you like.
+
+  - [Learning Public Data Sets](https://www.linkedin.com/learning/learning-public-data-sets-2/use-public-data-sets-to-perform-analyses?u=74650722).
